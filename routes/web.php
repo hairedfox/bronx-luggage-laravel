@@ -21,3 +21,7 @@ Route::get('/contact-us', [StaticPagesController::class, 'contact_us']);
 Route::get('/login', [AuthController::class, 'show_login_form'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/bags', [CarriersController::class, 'bags']);
+Route::get('/backpacks', [CarriersController::class, 'backpacks']);
+Route::get('/luggages', [CarriersController::class, 'luggages']);
