@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\StaticPagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,8 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [StaticPagesController::class, 'homepage']);
+Route::get('/contact-us', [StaticPagesController::class, 'contact_us']);
 
 // Login Routes
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');

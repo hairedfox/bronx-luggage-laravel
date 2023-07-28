@@ -8,11 +8,11 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" type="image/x-icon" href="{{asset('img/favicon.ico')}}">
-  <link rel="stylesheet" href="{{asset('css/plugins.css')}}">
-  <link rel="stylesheet" href="{{asset('css/style.css')}}">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="assets/css/plugins.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <script src="{{ asset('js/app.js') }}" defer></script>
+  <script src="assets/js/app.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
-          {{ config('app.name', 'Laravel') }}
+          {{ config('app.name', 'Bronx Luggage') }}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -70,6 +70,10 @@
     </nav>
 
     <main class="py-4">
+      <div class="off_canvars_overlay"></div>
+      @include('layouts.off_canvas')
+      @include('layouts.header')
+      @include('layouts.breadcrumbs')
       @yield('content')
     </main>
   </div>
