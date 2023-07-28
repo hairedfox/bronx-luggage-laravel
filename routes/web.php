@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\StaticPagesController;
+use App\Http\Controllers\CarriersController;
+use App\Http\Controllers\GalleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +27,5 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/bags', [CarriersController::class, 'bags']);
 Route::get('/backpacks', [CarriersController::class, 'backpacks']);
 Route::get('/luggages', [CarriersController::class, 'luggages']);
+
+Route::get('/gallery', [GalleryController::class, 'index']);
