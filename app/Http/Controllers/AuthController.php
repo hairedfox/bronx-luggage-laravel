@@ -11,7 +11,7 @@ class AuthController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function showLoginForm()
+    public function show_login_form()
     {
         return view('auth.login');
     }
