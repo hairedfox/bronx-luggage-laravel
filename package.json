@@ -12,7 +12,8 @@
         "laravel-vite-plugin": "^0.7.5",
         "lodash": "^4.17.21",
         "postcss": "^8.4.27",
-        "vite": "^4.0.0"
+        "vite": "^4.0.0",
+        "vite-plugin-mkcert": "^1.16.0"
     },
     "dependencies": {},
     "engines": {

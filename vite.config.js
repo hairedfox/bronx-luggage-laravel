@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import mkcert from 'vite-plugin-mkcert'
 
 export default defineConfig({
     server: { https: true },
@@ -13,7 +14,8 @@ export default defineConfig({
                 'resources/css/style.css'
             ],
             refresh: true,
-        }), ,
+        }),
+        mkcert(),
         {
             name: 'blade',
             handleHotUpdate({ file, server }) {
