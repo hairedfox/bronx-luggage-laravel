@@ -14,6 +14,7 @@ class TrustHosts extends Middleware
     public function hosts(): array
     {
         return [
+            'bronx-luggage-1fa1b84e54da.herokuapp.com',
             $this->allSubdomainsOfApplicationUrl(),
         ];
     }
