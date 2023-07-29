@@ -57,7 +57,7 @@
         <div class="row align-items-center">
           <div class="col-lg-3 col-md-6">
             <div class="logo">
-              <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+              <a href="index.html"><img src="/assets/img/logo/logo.png" alt=""></a>
             </div>
           </div>
           <div class="col-lg-9 col-md-12">
@@ -325,7 +325,7 @@
                   <div class="mini_cart_inner">
                     <div class="cart_item">
                       <div class="cart_img">
-                        <a href="#"><img src="assets/img/s-product/product.jpg" alt=""></a>
+                        <a href="#"><img src="/assets/img/s-product/product.jpg" alt=""></a>
                       </div>
                       <div class="cart_info">
                         <a href="#">Sit voluptatem rhoncus sem lectus</a>
@@ -337,7 +337,7 @@
                     </div>
                     <div class="cart_item">
                       <div class="cart_img">
-                        <a href="#"><img src="assets/img/s-product/product2.jpg" alt=""></a>
+                        <a href="#"><img src="/assets/img/s-product/product2.jpg" alt=""></a>
                       </div>
                       <div class="cart_info">
                         <a href="#">Natus erro at congue massa commodo</a>

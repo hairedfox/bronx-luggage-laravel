@@ -13,7 +13,7 @@ class AuthController extends Controller
      */
     public function show_login_form()
     {
-        return view('auth.login');
+        return view('auth.new');
     }
 
     /**

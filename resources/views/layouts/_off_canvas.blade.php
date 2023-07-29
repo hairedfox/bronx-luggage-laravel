@@ -88,7 +88,7 @@
               <div class="mini_cart_inner">
                 <div class="cart_item">
                   <div class="cart_img">
-                    <a href="#"><img src="assets/img/s-product/product.jpg" alt=""></a>
+                    <a href="#"><img src="/assets/img/s-product/product.jpg" alt=""></a>
                   </div>
                   <div class="cart_info">
                     <a href="#">Sit voluptatem rhoncus sem lectus</a>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="cart_item">
                   <div class="cart_img">
-                    <a href="#"><img src="assets/img/s-product/product2.jpg" alt=""></a>
+                    <a href="#"><img src="/assets/img/s-product/product2.jpg" alt=""></a>
                   </div>
                   <div class="cart_info">
                     <a href="#">Natus erro at congue massa commodo</a>

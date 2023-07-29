@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\StaticPagesController;
 use App\Http\Controllers\CarriersController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,6 @@ Route::get('/backpacks', [CarriersController::class, 'backpacks']);
 Route::get('/luggages', [CarriersController::class, 'luggages']);
 
 Route::get('/gallery', [GalleryController::class, 'index']);
+
+Route::get('/users/new', [UsersController::class, 'new']);
+Route::post('/users', [UsersController::class, 'create']);

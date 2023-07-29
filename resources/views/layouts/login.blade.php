@@ -8,7 +8,6 @@
     <main class="py-4">
       <div class="off_canvars_overlay"></div>
       @include('layouts._off_canvas')
-      @include('layouts._header')
       @include('layouts._breadcrumbs')
       @yield('content')
     </main>
