@@ -3,8 +3,8 @@
     <h2>login</h2>
     <form action="#">
       <p>
-        <label>Username or email <span>*</span></label>
-        <input type="text">
+        <label>Email <span>*</span></label>
+        <input type="email">
       </p>
       <p>
         <label>Passwords <span>*</span></label>
