@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <link rel="stylesheet" href="/assets/css/plugins.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
-
-  <script src="/assets/js/app.js" defer></script>
+  @vite([
+    'resources/css/app.css',
+    'resources/js/app.js',
+    'resources/css/plugins.css',
+    'resources/css/style.css'
+  ])
 </head>
