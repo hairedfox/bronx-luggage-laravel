@@ -18,18 +18,18 @@ use App\Http\Controllers\UsersController;
 |
 */
 
-Route::get('/', [StaticPagesController::class, 'homepage']);
-Route::get('/contact-us', [StaticPagesController::class, 'contact_us']);
+Route::get('/', [StaticPagesController::class, 'homepage'])->name('root');
+Route::get('/contact-us', [StaticPagesController::class, 'contact_us'])->name('contact');
 
 Route::get('/login', [AuthController::class, 'show_login_form'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/bags', [CarriersController::class, 'bags']);
-Route::get('/backpacks', [CarriersController::class, 'backpacks']);
-Route::get('/luggages', [CarriersController::class, 'luggages']);
+Route::get('/bags', [CarriersController::class, 'bags'])->name('bags');
+Route::get('/backpacks', [CarriersController::class, 'backpacks'])->name('backpacks');
+Route::get('/luggages', [CarriersController::class, 'luggages'])->name('luggages');
 
-Route::get('/gallery', [GalleryController::class, 'index']);
+Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
 
-Route::get('/users/new', [UsersController::class, 'new']);
+Route::get('/users/new', [UsersController::class, 'new'])->name('register');
 Route::post('/users', [UsersController::class, 'create']);
