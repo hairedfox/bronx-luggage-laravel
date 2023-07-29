@@ -10,7 +10,12 @@
       @include('layouts._off_canvas')
       @include('layouts._header')
       @include('layouts._breadcrumbs')
-      @yield('content')
+
+      <div class="container mb-5">
+        @yield('content')
+      </div>
+
+      @include('layouts._footer')
     </main>
   </div>
 </body>
