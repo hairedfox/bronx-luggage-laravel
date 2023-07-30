@@ -15,7 +15,7 @@ export default defineConfig({
                 'resources/img/s-product/product.jpg',
                 'resources/img/s-product/product2.jpg',
                 'resources/img/favicon.ico',
-                'resources/img/logo/logo-no-background.svg',
+                'resources/img/logo/logo.svg',
                 'resources/img/about/newsletter-icon.png',
                 'resources/img/icon/payment.png'
             ],
