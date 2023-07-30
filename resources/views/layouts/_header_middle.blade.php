@@ -4,7 +4,7 @@
       <div class="col-lg-3 col-md-6">
         <div class="logo">
           <a href="{{ route('root') }}">
-            <img src="{{ Vite::asset('resources/img/logo/logo.png') }}" alt="">
+            <img style="max-width: 135%" src="{{ Vite::asset('resources/img/logo/logo-no-background.svg') }}" alt="">
           </a>
         </div>
       </div>
