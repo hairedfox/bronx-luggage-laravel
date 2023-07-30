@@ -7,7 +7,7 @@
           <div class="newsletter_container">
             <div class="newsletter_content">
               <div class="newsletter_icone">
-                <img src="/assets/img/about/newsletter-icon.png" alt="">
+                <img src="{{ Vite::asset('resources/img/about/newsletter-icon.png') }}" alt="">
               </div>
               <div class="newsletter_text">
                 <h3>Sign Up For Newsletters</h3>
@@ -47,7 +47,7 @@
             </div>
             <div class="footer_payment">
               <p>Payment Methods:</p>
-              <img src="/assets/img/icon/payment.png" alt="">
+              <img src="{{ Vite::asset('resources/img/icon/payment.png') }}" alt="">
             </div>
           </div>
         </div>

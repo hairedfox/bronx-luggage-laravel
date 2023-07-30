@@ -5,7 +5,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="{{Vite::asset('resources/img/favicon.ico')}}">
   @vite([
     'resources/css/app.css',
     'resources/js/app.js',

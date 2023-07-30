@@ -3,7 +3,9 @@
     <div class="row align-items-center">
       <div class="col-lg-3 col-md-6">
         <div class="logo">
-          <a href="{{ route('root') }}"><img src="/assets/img/logo/logo.png" alt=""></a>
+          <a href="{{ route('root') }}">
+            <img src="{{ Vite::asset('resources/img/logo/logo.png') }}" alt="">
+          </a>
         </div>
       </div>
       <div class="col-lg-9 col-md-12">
