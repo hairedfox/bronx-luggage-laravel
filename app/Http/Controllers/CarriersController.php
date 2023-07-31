@@ -17,7 +17,7 @@ class CarriersController extends Controller
       return view('carriers.backpacks');
     }
 
-    public function luggages() {
-      return view('carriers.luggages');
+    public function luggage() {
+      return view('carriers.luggage');
     }
 }

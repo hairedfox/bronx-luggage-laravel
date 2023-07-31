@@ -12,12 +12,12 @@
         <div class="main_menu menu_position text-right">
           <nav>
             <ul>
-              <li><a href="{{ route('root') }}">home</li>
-              <li><a href="{{ route('luggages') }}">Luggages</a></li>
-              <li><a href="{{ route('backpacks') }}">Backpacks</a></li>
-              <li><a class="active" href="{{ route('bags') }}">Bags</i></a></li>
-              <li><a href="{{ route('gallery') }}">Gallery</a></li>
-              <li><a href="{{ route('contact') }}"> Contact Us</a></li>
+              <li><a href="{{ route('root') }}" class="{{ Route::currentRouteName() == 'root' ? 'active' : '' }}">home</li>
+              <li><a href="{{ route('luggage') }}" class="{{ Route::currentRouteName() == 'luggage' ? 'active' : '' }}">Luggage</a></li>
+              <li><a href="{{ route('backpacks') }}" class="{{ Route::currentRouteName() == 'backpacks' ? 'active' : '' }}">Backpacks</a></li>
+              <li><a href="{{ route('bags') }}" class="{{ Route::currentRouteName() == 'bags' ? 'active' : '' }}">Bags</i></a></li>
+              <li><a href="{{ route('gallery') }}" class="{{ Route::currentRouteName() == 'gallery' ? 'active' : '' }}">Gallery</a></li>
+              <li><a href="{{ route('contact') }}" class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }}"> Contact Us</a></li>
             </ul>
           </nav>
         </div>

@@ -12,6 +12,7 @@
       @include('layouts._breadcrumbs')
 
       <div class="container mb-5">
+        @include('shared._flash_message')
         @yield('content')
       </div>
 

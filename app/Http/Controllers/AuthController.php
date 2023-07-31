@@ -30,7 +30,7 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('/');
+            return redirect()->intended('/')->with('alert-success', 'Logged in successfully.');;
         }
 
         // Authentication failed, redirect back to the login form with errors.
@@ -51,6 +51,6 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('/')->with('alert-success', 'Logged out successfully.');
     }
 }

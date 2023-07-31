@@ -3,12 +3,12 @@
     <h2>login</h2>
     <form action="/login" method='POST'>
       @csrf
+      @error('auth')
+        <div class="alert alert-danger">{{ $message }}</div>
+      @enderror
       <p>
         <label>Email <span>*</span></label>
         <input id="email" type="email" name="email" class="@error('auth') is-invalid @enderror">
-        @error('auth')
-          <div class="alert alert-danger">{{ $message }}</div>
-        @enderror
       </p>
       <p>
         <label>Passwords <span>*</span></label>

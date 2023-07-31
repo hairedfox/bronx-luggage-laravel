@@ -27,7 +27,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/bags', [CarriersController::class, 'bags'])->name('bags');
 Route::get('/backpacks', [CarriersController::class, 'backpacks'])->name('backpacks');
-Route::get('/luggages', [CarriersController::class, 'luggages'])->name('luggages');
+Route::get('/luggage', [CarriersController::class, 'luggage'])->name('luggage');
 
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
 

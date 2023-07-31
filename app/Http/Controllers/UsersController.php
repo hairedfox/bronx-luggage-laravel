@@ -31,9 +31,9 @@ class UsersController extends Controller
 
         # TODO: Fix flash message, it doesn't work yet.
         if ($user->save()) {
-            session()->flash('message', 'Your account is created. Please login!');
+            session()->flash('alert-success', 'Your account is created. Please login!');
         } else {
-            session()->flash('message', 'Failed to register');
+            session()->flash('alert-danger', 'Failed to register');
         }
 
         return redirect('/');
