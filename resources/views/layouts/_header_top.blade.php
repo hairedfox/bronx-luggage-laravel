@@ -36,6 +36,18 @@
                   <li><a href="my-account.html">My Account </a></li>
                   <li><a href="cart.html">Shopping Cart</a></li>
                   <li><a href="wishlist.html">Wishlist</a></li>
+                  @auth
+                    <li>
+                      <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                       document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                      </a>
+
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                      </form>
+                    </li>
+                  @endif
                 </ul>
               </li>
 
