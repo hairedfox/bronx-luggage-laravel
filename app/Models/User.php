@@ -13,18 +13,19 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $fillable = [
+    const FILLABLE_ATTRIBUTES = [
         'first_name',
         'last_name',
         'role',
         'email',
         'password',
     ];
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = User::FILLABLE_ATTRIBUTES;
 
     /**
      * The attributes that should be hidden for serialization.
@@ -48,5 +49,9 @@ class User extends Authenticatable
 
     public function isAdmin() {
         return $this->role === UserRole::Admin;
+    }
+
+    public function fullname(): string {
+        return $this->first_name . ' ' . $this->last_name;
     }
 }
