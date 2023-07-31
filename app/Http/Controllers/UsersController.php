@@ -20,13 +20,16 @@ class UsersController extends Controller
         $user_params = $request->validate([
             'first_name' => 'required',
             'last_name' => 'required',
-            'email' => 'required|email',
-            'password' => 'required'
+            'email' => 'required|email|unique:users',
+            'password' => 'required',
+            'password_confirmation' => 'required|same:password'
         ]);
 
         $user = new User;
 
         $user->fill($user_params);
+
+        # TODO: Fix flash message, it doesn't work yet.
         if ($user->save()) {
             session()->flash('message', 'Your account is created. Please login!');
         } else {
