@@ -1,19 +1,23 @@
 <div class="col-lg-6 col-md-6">
   <div class="account_form login">
     <h2>login</h2>
-    <form action="#">
+    <form action="/login" method='POST'>
+      @csrf
       <p>
         <label>Email <span>*</span></label>
-        <input type="email">
+        <input id="email" type="email" name="email" class="@error('auth') is-invalid @enderror">
+        @error('auth')
+          <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
       </p>
       <p>
         <label>Passwords <span>*</span></label>
-        <input type="password">
+        <input type="password" name="password">
       </p>
       <div class="login_submit">
         <a href="#">Lost your password?</a>
         <label for="remember">
-          <input id="remember" type="checkbox">
+          <input id="remember" type="checkbox" name="remember">
           Remember me
         </label>
         <button type="submit">login</button>

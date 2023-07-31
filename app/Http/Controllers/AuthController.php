@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class AuthController extends Controller
 {
@@ -31,12 +32,12 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Authentication passed, user is logged in.
-            return redirect()->intended('/dashboard'); // Redirect to the dashboard or any other desired route upon successful login.
+            return redirect()->intended('/'); // Redirect to the dashboard or any other desired route upon successful login.
         }
 
         // Authentication failed, redirect back to the login form with errors.
         return redirect()->back()->withInput()->withErrors([
-            'email' => 'Invalid credentials.',
+            'auth' => 'Invalid credentials.',
         ]);
     }
 

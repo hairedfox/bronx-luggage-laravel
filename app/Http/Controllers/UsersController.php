@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
 class UsersController extends Controller
@@ -13,7 +14,5 @@ class UsersController extends Controller
       return view('users.new');
     }
 
-    public function create() {
-
-    }
+    public function create() {}
 }
