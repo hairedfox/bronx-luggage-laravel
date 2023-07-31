@@ -1,9 +1,7 @@
-@if (!$errors->isEmpty())
+@if ($errors->any())
   <div class="alert alert-danger">
-    @foreach($attribute_list as $attribute)
-      @error($attribute)
-        <li>{{ $message }}</li>
-      @enderror
+    @foreach($errors->all() as $error)
+      <li>{{ $error }}</li>
     @endforeach
   </div>
 @endif
