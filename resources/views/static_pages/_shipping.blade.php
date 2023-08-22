@@ -4,7 +4,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single_shipping">
                         <div class="shipping_icone">
-                            <img src="assets/img/about/shipping1.png" alt="">
+                            <img src="{{ Vite::asset('resources/img/about/shipping1.png') }}" alt="">
                         </div>
                         <div class="shipping_content">
                             <h4>Free Delivery</h4>
@@ -15,7 +15,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single_shipping">
                         <div class="shipping_icone">
-                            <img src="assets/img/about/shipping2.png" alt="">
+                            <img src="{{ Vite::asset('resources/img/about/shipping2.png') }}" alt="">
                         </div>
                         <div class="shipping_content">
                             <h4>Online Support 24/7</h4>
@@ -26,7 +26,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single_shipping">
                         <div class="shipping_icone">
-                            <img src="assets/img/about/shipping3.png" alt="">
+                            <img src="{{ Vite::asset('resources/img/about/shipping3.png') }}" alt="">
                         </div>
                         <div class="shipping_content">
                             <h4>Money Return</h4>
@@ -37,7 +37,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single_shipping">
                         <div class="shipping_icone">
-                            <img src="assets/img/about/shipping4.png" alt="">
+                            <img src="{{ Vite::asset('resources/img/about/shipping4.png') }}" alt="">
                         </div>
                         <div class="shipping_content">
                             <h4>Member Discount</h4>

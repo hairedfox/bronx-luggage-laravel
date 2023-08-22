@@ -8,60 +8,60 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-5 col-md-5 col-sm-12">
-                                <div class="modal_tab">  
+                                <div class="modal_tab">
                                     <div class="tab-content product-details-large">
                                         <div class="tab-pane fade show active" id="tab1" role="tabpanel" >
                                             <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/img/product/productbig5.jpg" alt=""></a>    
+                                                <a href="#"><img src="{{ Vite::asset('resources/img/product/productbig5.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab2" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/img/product/productbig4.jpg" alt=""></a>    
+                                                <a href="#"><img src="{{ Vite::asset('resources/img/product/productbig4.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab3" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/img/product/productbig3.jpg" alt=""></a>    
+                                                <a href="#"><img src="{{ Vite::asset('resources/img/product/productbig3.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab4" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/img/product/productbig2.jpg" alt=""></a>    
+                                                <a href="#"><img src="{{ Vite::asset('resources/img/product/productbig2.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal_tab_button">    
+                                    <div class="modal_tab_button">
                                         <ul class="nav product_navactive owl-carousel" role="tablist">
                                             <li >
-                                                <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false"><img src="assets/img/product/product8.jpg" alt=""></a>
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false"><img src="{{ Vite::asset('resources/img/product/product8.jpg') }}" alt=""></a>
                                             </li>
                                             <li>
-                                                 <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false"><img src="assets/img/product/product6.jpg" alt=""></a>
+                                                 <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false"><img src="{{ Vite::asset('resources/img/product/product6.jpg') }}" alt=""></a>
                                             </li>
                                             <li>
-                                               <a class="nav-link button_three" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false"><img src="assets/img/product/product7.jpg" alt=""></a>
+                                               <a class="nav-link button_three" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false"><img src="{{ Vite::asset('resources/img/product/product7.jpg') }}" alt=""></a>
                                             </li>
                                             <li>
-                                               <a class="nav-link" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false"><img src="assets/img/product/product5.jpg" alt=""></a>
+                                               <a class="nav-link" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false"><img src="{{ Vite::asset('resources/img/product/product5.jpg') }}" alt=""></a>
                                             </li>
 
                                         </ul>
-                                    </div>    
-                                </div>  
-                            </div> 
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-lg-7 col-md-7 col-sm-12">
                                 <div class="modal_right">
                                     <div class="modal_title mb-10">
-                                        <h2>Sit voluptatem rhoncus sem lectus</h2> 
+                                        <h2>Sit voluptatem rhoncus sem lectus</h2>
                                     </div>
                                     <div class="modal_price mb-10">
-                                        <span class="new_price">$64.99</span>    
-                                        <span class="old_price" >$78.99</span>    
+                                        <span class="new_price">$64.99</span>
+                                        <span class="old_price" >$78.99</span>
                                     </div>
                                     <div class="modal_description mb-15">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam, reiciendis maiores quidem aperiam, rerum vel recusandae </p>    
-                                    </div> 
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam, reiciendis maiores quidem aperiam, rerum vel recusandae </p>
+                                    </div>
                                     <div class="variants_selects">
                                         <div class="variants_size">
                                            <h2>size</h2>
@@ -88,7 +88,7 @@
                                                 <input min="1" max="100" step="2" value="1" type="number">
                                                 <button type="submit">add to cart</button>
                                             </form>
-                                        </div>   
+                                        </div>
                                     </div>
                                     <div class="modal_social">
                                         <h2>Share this product</h2>
@@ -98,13 +98,13 @@
                                             <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
                                             <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                             <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>    
-                                    </div>      
-                                </div>    
-                            </div>    
-                        </div>     
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </div>

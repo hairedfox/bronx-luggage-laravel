@@ -13,7 +13,9 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product3.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html">
+                                                        <img src="{{ Vite::asset('resources/img/product/product3.jpg') }}" alt="">
+                                                    </a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -28,8 +30,8 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$86.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$86.00</span>
                                                         <span class="current_price">$79.00</span>
                                                     </div>
                                                 </div>
@@ -38,7 +40,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product4.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product4.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -53,17 +55,17 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$86.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$86.00</span>
                                                         <span class="current_price">$79.00</span>
                                                     </div>
                                                 </div>
                                             </figure>
-                                        </article> 
+                                        </article>
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product6.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product6.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -78,13 +80,13 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$86.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$86.00</span>
                                                         <span class="current_price">$79.00</span>
                                                     </div>
                                                 </div>
                                             </figure>
-                                        </article> 
+                                        </article>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
@@ -92,7 +94,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product1.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product1.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -107,8 +109,8 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$82.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$82.00</span>
                                                         <span class="current_price">$72.00</span>
                                                     </div>
                                                 </div>
@@ -117,7 +119,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product2.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product2.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -132,17 +134,17 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$80.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$80.00</span>
                                                         <span class="current_price">$70.00</span>
                                                     </div>
                                                 </div>
                                             </figure>
-                                        </article> 
+                                        </article>
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product3.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product3.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -157,18 +159,18 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$80.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$80.00</span>
                                                         <span class="current_price">$70.00</span>
                                                     </div>
                                                 </div>
                                             </figure>
-                                        </article> 
+                                        </article>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="small_product_list">
@@ -182,7 +184,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product5.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product5.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -197,8 +199,8 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$65.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$65.00</span>
                                                         <span class="current_price">$60.00</span>
                                                     </div>
                                                 </div>
@@ -207,7 +209,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product11.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product11.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -222,17 +224,17 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$75.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$75.00</span>
                                                         <span class="current_price">$65.00</span>
                                                     </div>
                                                 </div>
                                             </figure>
-                                        </article> 
+                                        </article>
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product9.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product9.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -247,13 +249,13 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$75.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$75.00</span>
                                                         <span class="current_price">$65.00</span>
                                                     </div>
                                                 </div>
                                             </figure>
-                                        </article> 
+                                        </article>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
@@ -261,7 +263,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product7.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product7.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -276,8 +278,8 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$85.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$85.00</span>
                                                         <span class="current_price">$76.00</span>
                                                     </div>
                                                 </div>
@@ -286,7 +288,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product8.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product8.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -301,17 +303,17 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$86.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$86.00</span>
                                                         <span class="current_price">$79.00</span>
                                                     </div>
                                                 </div>
                                             </figure>
-                                        </article> 
+                                        </article>
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product11.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product11.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -326,8 +328,8 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$86.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$86.00</span>
                                                         <span class="current_price">$79.00</span>
                                                     </div>
                                                 </div>
@@ -335,9 +337,9 @@
                                         </article>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="col-lg-4">
                    <div class="small_product_list">
@@ -351,7 +353,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product1.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product1.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -366,8 +368,8 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$82.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$82.00</span>
                                                         <span class="current_price">$72.00</span>
                                                     </div>
                                                 </div>
@@ -376,7 +378,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product2.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product2.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -391,8 +393,8 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$80.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$80.00</span>
                                                         <span class="current_price">$70.00</span>
                                                     </div>
                                                 </div>
@@ -401,7 +403,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product7.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product7.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -416,13 +418,13 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$80.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$80.00</span>
                                                         <span class="current_price">$70.00</span>
                                                     </div>
                                                 </div>
                                             </figure>
-                                        </article> 
+                                        </article>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
@@ -430,7 +432,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product5.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product5.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -445,8 +447,8 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$65.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$65.00</span>
                                                         <span class="current_price">$60.00</span>
                                                     </div>
                                                 </div>
@@ -455,7 +457,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product6.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product6.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -470,8 +472,8 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$75.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$75.00</span>
                                                         <span class="current_price">$65.00</span>
                                                     </div>
                                                 </div>
@@ -480,7 +482,7 @@
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="assets/img/product/product4.jpg" alt=""></a>
+                                                    <a class="primary_img" href="product-details.html"><img src="{{ Vite::asset('resources/img/product/product4.jpg') }}" alt=""></a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
@@ -495,19 +497,19 @@
                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                        </ul>
                                                     </div>
-                                                    <div class="price_box"> 
-                                                        <span class="old_price">$75.00</span> 
+                                                    <div class="price_box">
+                                                        <span class="old_price">$75.00</span>
                                                         <span class="current_price">$65.00</span>
                                                     </div>
                                                 </div>
                                             </figure>
-                                        </article>  
+                                        </article>
                                     </div>
                                 </div>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
