@@ -2,18 +2,9 @@
   <div class="widget_list widget_categories">
     <h3>Product categories</h3>
     <ul>
-      <li><a href="#">Cameras & Camcoders</a></li>
-      <li class="widget_sub_categories"><a href="javascript:void(0)">Computer & Networking</a>
-        <ul class="widget_dropdown_categories">
-          <li><a href="#">Computer</a></li>
-          <li><a href="#">Networking</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Games & Consoles</a></li>
-      <li><a href="#">Headphone & Speaker</a></li>
-      <li><a href="#">Movies & Video Games</a></li>
-      <li><a href="#">Smartphone</a> </li>
-      <li><a href="#">Uncategorized</a></li>
+      @foreach($categories as $category)
+        <li><a href="#">{{$category['name']}}</a></li>
+      @endforeach
     </ul>
   </div>
   <div class="widget_list widget_filter">
