@@ -2,7 +2,7 @@
   <article class="single_product">
     <figure>
       <div class="product_name">
-        <h4><a href="product-details.html">Nostrum exercitationem itae neque nulla nec posuere sem</a></h4>
+        <h4><a href="product-details.html">{{ $carrier->description }}</a></h4>
       </div>
       <div class="product_rating">
         <ul>
@@ -25,7 +25,7 @@
       <div class="product_footer product_content grid_content">
         <div class="price_box">
           <span class="old_price">$86.00</span>
-          <span class="current_price">$79.00</span>
+          <span class="current_price">{{$carrier->price}}</span>
         </div>
         <div class="action_links">
           <ul>
@@ -53,13 +53,10 @@
         </div>
         <div class="price_box">
           <span class="old_price">$86.00</span>
-          <span class="current_price">$79.00</span>
+          <span class="current_price">{{$carrier->price}}</span>
         </div>
         <div class="product_desc">
-          <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique
-            ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim
-            semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ..</p>
+          <p>{{$carrier->description}}</p>
         </div>
         <div class="action_links">
           <ul>
