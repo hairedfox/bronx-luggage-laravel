@@ -25,9 +25,7 @@ Route::get('/login', [AuthController::class, 'showFormLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/bags', [CarriersController::class, 'bags'])->name('bags');
-Route::get('/backpacks', [CarriersController::class, 'backpacks'])->name('backpacks');
-Route::get('/luggage', [CarriersController::class, 'luggage'])->name('luggage');
+Route::get('/shop', [CarriersController::class, 'index'])->name('shop');
 
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
 

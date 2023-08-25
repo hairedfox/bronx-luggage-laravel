@@ -9,15 +9,7 @@ class CarriersController extends Controller
 {
     use ValidatesRequests;
 
-    public function bags() {
-      return view('carriers.bags');
-    }
-
-    public function backpacks() {
-      return view('carriers.backpacks');
-    }
-
-    public function luggage() {
-      return view('carriers.luggage');
+    public function index() {
+      return view('carriers.index');
     }
 }

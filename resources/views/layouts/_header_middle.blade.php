@@ -13,9 +13,7 @@
           <nav>
             <ul>
               <li><a href="{{ route('root') }}" class="{{ Route::currentRouteName() == 'root' ? 'active' : '' }}">home</li>
-              <li><a href="{{ route('luggage') }}" class="{{ Route::currentRouteName() == 'luggage' ? 'active' : '' }}">Luggage</a></li>
-              <li><a href="{{ route('backpacks') }}" class="{{ Route::currentRouteName() == 'backpacks' ? 'active' : '' }}">Backpacks</a></li>
-              <li><a href="{{ route('bags') }}" class="{{ Route::currentRouteName() == 'bags' ? 'active' : '' }}">Bags</i></a></li>
+              <li><a href="{{ route('shop') }}" class="{{ Route::currentRouteName() == 'shop' ? 'active' : '' }}">shop</i></a></li>
               <li><a href="{{ route('gallery') }}" class="{{ Route::currentRouteName() == 'gallery' ? 'active' : '' }}">Gallery</a></li>
               <li><a href="{{ route('contact') }}" class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }}"> Contact Us</a></li>
             </ul>
