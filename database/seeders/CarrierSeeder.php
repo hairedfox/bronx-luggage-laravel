@@ -22,7 +22,8 @@ class CarrierSeeder extends Seeder
         for($i = 0; $i < 50; $i++)
         {
             array_push($records, [
-                'description' => $faker->sentence(),
+                'name' => $faker->sentence(),
+                'description' => $faker->paragraph(),
                 'gender' => $faker->randomElements(['male', 'female'])[0],
                 'type' => $faker->randomElements(['bag', 'luggage', 'backpack'])[0],
                 'brand_id' => $faker->randomElements($brandIds)[0],

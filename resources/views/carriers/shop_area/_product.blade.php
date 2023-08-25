@@ -2,7 +2,7 @@
   <article class="single_product">
     <figure>
       <div class="product_name">
-        <h4><a href="product-details.html">{{ $carrier->description }}</a></h4>
+        <h4><a href="product-details.html">{{$carrier->name}}</a></h4>
       </div>
       <div class="product_rating">
         <ul>
@@ -40,7 +40,7 @@
       </div>
       <div class="product_content list_content">
         <div class="product_name">
-          <h4><a href="product-details.html">Nostrum exercitationem itae neque nulla nec posuere sem</a></h4>
+          <h4><a href="product-details.html">{{$carrier->name}}</a></h4>
         </div>
         <div class="product_rating">
           <ul>
