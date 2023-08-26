@@ -23,10 +23,16 @@ class CarriersController extends BaseController
     }
 
     public function index(Request $request) {
-      // carriers list
+      // carriers list -- done
       // filter by attributes (type, weight, color)
       // sorting: price, averating rating, name alphabetically
-      // pagination: limit: 10 per page
+      // pagination: limit: 10 per page -- done
+        // filter: category_id_eq
+            //     type_eq
+            //     price_max_eq
+            //     price_min_eq
+            //     name_cont
+
       $params = $request->all();
       $paginator = $this->carrierRepository->list($params);
 
