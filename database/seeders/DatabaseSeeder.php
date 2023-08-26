@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
             BrandSeeder::class,
             CarrierSeeder::class,
             CategorySeeder::class,
-            MediaSeeder::class
+            MediaSeeder::class,
+            CarriersImageSeeder::class
         ]);
     }
 }
