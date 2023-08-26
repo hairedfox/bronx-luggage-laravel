@@ -60,9 +60,6 @@
                                                 <div class="label_product">
                                                     <span class="label_sale">Sale!</span>
                                                 </div>
-                                                <div class="quick_button">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"  title="quick view"> Quick View</a>
-                                                </div>
                                             </div>
                                             <div class="product_footer">
                                                 <div class="price_box">
