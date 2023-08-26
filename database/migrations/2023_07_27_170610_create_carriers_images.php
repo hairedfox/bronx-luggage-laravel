@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('carrier_id')->constrained();
             $table->foreignId('media_id')->constrained();
+            $table->string('type'); // featured, details
             $table->timestamps();
         });
     }
