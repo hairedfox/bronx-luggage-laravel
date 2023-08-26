@@ -29,21 +29,21 @@ class CarriersController extends BaseController
       // pagination: limit: 10 per page
       $params = $request->all();
       $paginator = $this->carrierRepository->list($params);
-      $categories = $this->categoryRepository->listNoPagination();
-      $carrierTypes = Carrier::TYPES;
 
       return view('carriers.index', [
           'carriers' => $paginator->items(),
-          'categories' => $categories,
-          'carrier_types' => $carrierTypes,
+          'categories' => $this->categoryRepository->listNoPagination(),
+          'carrier_types' => Carrier::TYPES,
           'paginator' => [
               'page' => $paginator->currentPage(),
               'prev' => $paginator->previousPageUrl(),
               'next' => $paginator->nextPageUrl(),
-              'count' => $paginator->count(),
+              'count' => $paginator->total(),
               'per_page' => $paginator->perPage(),
               'last_page' => $paginator->lastPage(),
-              'has_more_page' => $paginator->hasMorePages()
+              'has_more_page' => $paginator->hasMorePages(),
+              'first_item' => $paginator->firstItem(),
+              'last_item' => $paginator->lastItem()
           ]
       ]);
     }

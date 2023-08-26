@@ -21,6 +21,6 @@
     </form>
   </div>
   <div class="page_amount">
-    <p>Showing 1–9 of 21 results</p>
+    <p>Showing {{$paginator['first_item']}}-{{$paginator['last_item']}} of {{$paginator['count']}} results</p>
   </div>
 </div>
