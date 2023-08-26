@@ -35,11 +35,13 @@ class CarriersController extends BaseController
 
       $params = $request->all();
       $paginator = $this->carrierRepository->list($params);
+      $compareCarriers = array_slice($paginator->items(), 0, 3);
 
       return view('carriers.index', [
           'carriers' => $paginator->items(),
           'categories' => $this->categoryRepository->listNoPagination(),
           'carrier_types' => Carrier::TYPES,
+          'compare_carriers' => $compareCarriers,
           'paginator' => [
               'page' => $paginator->currentPage(),
               'prev' => $paginator->previousPageUrl(),

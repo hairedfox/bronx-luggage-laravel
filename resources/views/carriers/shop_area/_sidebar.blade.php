@@ -19,75 +19,11 @@
   <div class="widget_list">
     <h3>Compare Products</h3>
     <div class="recent_product_container">
-      <article class="recent_product_list">
-        <figure>
-          <div class="product_thumb">
-            <a href="product-details.html"><img src="{{Vite::asset('resources/img/product/product1.jpg')}}" alt=""></a>
-          </div>
-          <div class="product_content">
-            <h4><a href="product-details.html">Aliquam lobortis pellentesque nisi</a></h4>
-            <div class="product_rating">
-              <ul>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-            <div class="price_box">
-              <span class="old_price">$70.00</span>
-              <span class="current_price">$65.00</span>
-            </div>
-          </div>
-        </figure>
-      </article>
-      <article class="recent_product_list">
-        <figure>
-          <div class="product_thumb">
-            <a href="product-details.html"><img src="assets/img/product/product2.jpg" alt=""></a>
-          </div>
-          <div class="product_content">
-            <h4><a href="product-details.html">Convallis quam sit vitae sodales neque</a></h4>
-            <div class="product_rating">
-              <ul>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-            <div class="price_box">
-              <span class="old_price">$70.00</span>
-              <span class="current_price">$65.00</span>
-            </div>
-          </div>
-        </figure>
-      </article>
-      <article class="recent_product_list">
-        <figure>
-          <div class="product_thumb">
-            <a href="product-details.html"><img src="assets/img/product/product3.jpg" alt=""></a>
-          </div>
-          <div class="product_content">
-            <h4><a href="product-details.html">Cillum dolore tortor nisl fermentum</a></h4>
-            <div class="product_rating">
-              <ul>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-            <div class="price_box">
-              <span class="old_price">$70.00</span>
-              <span class="current_price">$65.00</span>
-            </div>
-          </div>
-        </figure>
-      </article>
+      @foreach($compare_carriers as $carrier)
+        @include('carriers.shop_area._compare_product', [
+            'carrier' => $carrier
+        ])
+      @endforeach
     </div>
   </div>
 
