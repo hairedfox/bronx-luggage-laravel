@@ -41,7 +41,9 @@ class CarriersController extends BaseController
               'prev' => $paginator->previousPageUrl(),
               'next' => $paginator->nextPageUrl(),
               'count' => $paginator->count(),
-              'per_page' => $paginator->perPage()
+              'per_page' => $paginator->perPage(),
+              'last_page' => $paginator->lastPage(),
+              'has_more_page' => $paginator->hasMorePages()
           ]
       ]);
     }
