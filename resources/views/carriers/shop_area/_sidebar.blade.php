@@ -22,7 +22,7 @@
       <article class="recent_product_list">
         <figure>
           <div class="product_thumb">
-            <a href="product-details.html"><img src="assets/img/product/product1.jpg" alt=""></a>
+            <a href="product-details.html"><img src="{{Vite::asset('resources/img/product/product1.jpg')}}" alt=""></a>
           </div>
           <div class="product_content">
             <h4><a href="product-details.html">Aliquam lobortis pellentesque nisi</a></h4>

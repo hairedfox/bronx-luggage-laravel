@@ -96,20 +96,6 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
-          <div class="widgets_container widget_menu">
-            <h3>Let Us Help You</h3>
-            <div class="footer_menu">
-              <ul>
-                <li><a href="my-account.html">My Account</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Shipping Rates</a></li>
-                <li><a href="#">Amazon Prime</a></li>
-                <li><a href="wishlist.html">Wish List</a></li>
-                <li><a href="#">Manage Your Content</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </div>
