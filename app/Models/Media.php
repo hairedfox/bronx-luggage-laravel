@@ -15,7 +15,7 @@ class Media extends Model
         'user_id'
     ];
 
-    protected $table = 'carriers';
+    protected $table = 'media';
     protected $fillable = Media::FILLABLE_ATTRIBUTES;
 
     public function carriersImages(): HasMany
