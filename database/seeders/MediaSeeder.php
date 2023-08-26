@@ -41,7 +41,9 @@ class MediaSeeder extends Seeder
                 'path' => 'resources/img/product/'.$name,
                 'size' => '1.0 KB',
                 'type' => 'product',
-                'user_id' => $user->id
+                'user_id' => $user->id,
+                'created_at' => $this->gen_datetime(),
+                'updated_at' => $this->gen_datetime()
             ]);
         }
 
