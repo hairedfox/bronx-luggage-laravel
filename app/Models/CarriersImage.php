@@ -18,4 +18,9 @@ class CarriersImage extends Model
     {
         return $this->belongsTo(Carrier::class);
     }
+
+    public function media(): BelongsTo
+    {
+        return $this->belongsTo(Media::class);
+    }
 }
