@@ -16,6 +16,6 @@ class CarrierRepository extends AbstractRepository {
 
   public function list(array $params): Paginator
   {
-    return $this->query()->simplePaginate($this->getPageSize($params));
+    return $this->query()->with('carriersImages')->simplePaginate($this->getPageSize($params));
   }
 }

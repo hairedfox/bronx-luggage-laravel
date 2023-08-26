@@ -2,26 +2,21 @@
 
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Carrier extends Model
+class Media extends Model
 {
-    const TYPES = [
-        'luggage',
-        'backpack',
-        'bag'
-    ];
     const FILLABLE_ATTRIBUTES = [
-        'description',
-        'gender',
+        'name',
+        'path',
+        'size',
         'type',
-        'brand_id',
-        'price',
-        'release_year'
+        'user_id'
     ];
 
     protected $table = 'carriers';
-    protected $fillable = Carrier::FILLABLE_ATTRIBUTES;
+    protected $fillable = Media::FILLABLE_ATTRIBUTES;
 
     public function carriersImages(): HasMany
     {

@@ -28,14 +28,21 @@ class CarriersController extends BaseController
       // sorting: price, averating rating, name alphabetically
       // pagination: limit: 10 per page
       $params = $request->all();
-      $carriers = $this->carrierRepository->list($params);
+      $paginator = $this->carrierRepository->list($params);
       $categories = $this->categoryRepository->listNoPagination();
       $carrierTypes = Carrier::TYPES;
 
       return view('carriers.index', [
-          'carriers' => $carriers,
+          'carriers' => $paginator->items(),
           'categories' => $categories,
-          'carrier_types' => $carrierTypes
+          'carrier_types' => $carrierTypes,
+          'paginator' => [
+              'page' => $paginator->currentPage(),
+              'prev' => $paginator->previousPageUrl(),
+              'next' => $paginator->nextPageUrl(),
+              'count' => $paginator->count(),
+              'per_page' => $paginator->perPage()
+          ]
       ]);
     }
 }
