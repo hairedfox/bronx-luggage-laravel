@@ -101,11 +101,9 @@
   <div class="widget_list tags_widget">
     <h3>Product tags</h3>
     <div class="tag_cloud">
-      <a href="#">blouse</a>
-      <a href="#">clothes</a>
-      <a href="#">fashion</a>
-      <a href="#">handbag</a>
-      <a href="#">laptop</a>
+      @foreach($carrier_types as $type)
+        <a href="#">{{$type}}</a>
+      @endforeach
     </div>
   </div>
 </aside>

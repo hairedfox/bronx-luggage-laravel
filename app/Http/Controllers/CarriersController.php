@@ -7,6 +7,7 @@ use App\Repositories\CategoryRepository;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
+use App\Models\Carrier;
 
 class CarriersController extends BaseController
 {
@@ -29,10 +30,12 @@ class CarriersController extends BaseController
       $params = $request->all();
       $carriers = $this->carrierRepository->list($params);
       $categories = $this->categoryRepository->listNoPagination();
+      $carrierTypes = Carrier::TYPES;
 
       return view('carriers.index', [
           'carriers' => $carriers,
-          'categories' => $categories
+          'categories' => $categories,
+          'carrier_types' => $carrierTypes
       ]);
     }
 }

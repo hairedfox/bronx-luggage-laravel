@@ -5,6 +5,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Carrier extends Model
 {
+    const TYPES = [
+        'luggage',
+        'backpack',
+        'bag'
+    ];
     const FILLABLE_ATTRIBUTES = [
         'description',
         'gender',
