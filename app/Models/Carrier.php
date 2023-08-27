@@ -2,6 +2,7 @@
 
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Carrier extends Model
@@ -26,5 +27,10 @@ class Carrier extends Model
     public function carriersImages(): HasMany
     {
         return $this->hasMany(CarriersImage::class);
+    }
+
+    public function brand(): BelongsTo
+    {
+        return $this->belongsTo(Brand::class);
     }
 }

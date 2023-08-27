@@ -40,3 +40,5 @@ Route::get('/admin/dashboard', [Admin\DashboardController::class, 'index'])->nam
 
 Route::get('/admin/orders', [Admin\OrdersController::class, 'index'])->name('orders');
 Route::post('/admin/orders/{id}/move-state', [Admin\OrdersController::class, 'moveState']);
+
+Route::get('/admin/carriers', [Admin\CarriersController::class, 'index'])->name('admin-carriers');
