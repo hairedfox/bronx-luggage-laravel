@@ -11167,3 +11167,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: #363f4d;
   color: #ffffff;
 }
+
+main {
+  height: 100vh;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
