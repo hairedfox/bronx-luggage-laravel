@@ -37,3 +37,5 @@ Route::get('/admin/login', [Admin\AuthController::class, 'new'])->name('admin-lo
 Route::post('/admin/login', [Admin\AuthController::class, 'login']);
 Route::post('/admin/logout', [Admin\AuthController::class, 'logout'])->name('admin-logout');
 Route::get('/admin/dashboard', [Admin\DashboardController::class, 'index'])->name('admin-dashboard');
+
+Route::get('/admin/orders', [Admin\OrdersController::class, 'index'])->name('orders');

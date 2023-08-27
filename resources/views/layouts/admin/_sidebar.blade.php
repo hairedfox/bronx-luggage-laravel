@@ -9,7 +9,7 @@
     <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="{{route('admin-dashboard')}}">
+          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'admin-dashboard' ? 'active' : ''}}" aria-current="page" href="{{route('admin-dashboard')}}">
             <svg class="bi">
               <use xlink:href="#house-fill" />
             </svg>
@@ -17,7 +17,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="#">
+          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'orders' ? 'active' : ''}}" href="{{route('orders')}}">
             <svg class="bi">
               <use xlink:href="#file-earmark" />
             </svg>
@@ -25,7 +25,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="#">
+          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'carriers' ? 'active' : ''}}" href="#">
             <svg class="bi">
               <use xlink:href="#cart" />
             </svg>
@@ -33,7 +33,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="#">
+          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'customers' ? 'active' : ''}}" href="#">
             <svg class="bi">
               <use xlink:href="#people" />
             </svg>
@@ -41,7 +41,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="#">
+          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'requests' ? 'active' : ''}}" href="#">
             <svg class="bi">
               <use xlink:href="#graph-up" />
             </svg>
@@ -49,7 +49,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="#">
+          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'admin-media' ? 'active' : ''}}" href="#">
             <svg class="bi">
               <use xlink:href="#puzzle" />
             </svg>

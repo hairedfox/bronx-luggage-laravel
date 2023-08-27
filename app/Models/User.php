@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Enums\UserRole;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 class User extends Authenticatable
 {
@@ -53,5 +54,10 @@ class User extends Authenticatable
 
     public function fullname(): string {
         return $this->first_name . ' ' . $this->last_name;
+    }
+
+    public function orders(): MorphMany
+    {
+        return $this->morphMany(Order::class, 'orderable');
     }
 }
