@@ -17,9 +17,14 @@
       <td>{{class_basename($order->orderable->getModel())}}</td>
       <td>{{$order->total_price}}</td>
       <td>{{$order->status}}</td>
-      <td>
+      <td class="d-flex">
+        <a class="btn btn-info text-white" href="#">Detail</a>
+
         @if (!$order->isDone())
-          <button class="btn btn-success">Move to {{$order->nextState()}}</button>
+          <form action="{{'/admin/orders/'.$order->id.'/move-state'}}" method="POST" class="mx-2">
+            @csrf
+            <button class="btn btn-success">Move to {{$order->nextState()}}</button>
+          </form>
         @endif
       </td>
     </tr>

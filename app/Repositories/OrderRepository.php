@@ -14,6 +14,16 @@ class OrderRepository extends AbstractRepository {
     return Order::class;
   }
 
+  public function findById($id): Order
+  {
+    return $this->query()->find($id);
+  }
+
+  public function updateStatus(Order $order, string $status): bool
+  {
+    return $order->update(['status' => $status]);
+  }
+
   public function list(array $params): Paginator
   {
     return $this->query()->paginate($this->getPageSize($params));

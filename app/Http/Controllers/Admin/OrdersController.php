@@ -39,4 +39,22 @@ class OrdersController extends BaseController
       return redirect()->intended('/admin/login')->with('alert-danger', 'Permission denied. Login first');
     }
   }
+
+  public function moveState(string $id)
+  {
+    $order = $this->orderRepository->findById($id);
+
+    if (!$order) {
+      return redirect()->intended('/admin/orders')->with('alert-warning', 'Order not found.');
+    }
+
+    $result = $this->orderRepository->updateStatus($order, $order->nextState());
+
+    if ($result)
+    {
+      return redirect()->intended('/admin/orders')->with('alert-success', 'State moved successfully.');
+    }
+
+    return redirect()->intended('/admin/orders')->with('alert-danger', 'Unexpected error happened.');
+  }
 }

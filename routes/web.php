@@ -39,3 +39,4 @@ Route::post('/admin/logout', [Admin\AuthController::class, 'logout'])->name('adm
 Route::get('/admin/dashboard', [Admin\DashboardController::class, 'index'])->name('admin-dashboard');
 
 Route::get('/admin/orders', [Admin\OrdersController::class, 'index'])->name('orders');
+Route::post('/admin/orders/{id}/move-state', [Admin\OrdersController::class, 'moveState']);
