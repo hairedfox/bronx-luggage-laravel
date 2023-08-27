@@ -28,7 +28,7 @@ class AuthController extends BaseController
      * Handle user login attempt.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function login(Request $request): RedirectResponse
     {
@@ -53,7 +53,7 @@ class AuthController extends BaseController
      * Log the user out of the application.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function logout(Request $request)
     {
