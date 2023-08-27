@@ -11168,13 +11168,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #ffffff;
 }
 
-main {
-  height: 100vh;
-  max-height: 100vh;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;

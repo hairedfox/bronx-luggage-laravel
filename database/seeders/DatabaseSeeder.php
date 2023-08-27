@@ -18,7 +18,10 @@ class DatabaseSeeder extends Seeder
             CarrierSeeder::class,
             CategorySeeder::class,
             MediaSeeder::class,
-            CarriersImageSeeder::class
+            CarriersImageSeeder::class,
+            GuestSeeder::class,
+            OrderSeeder::class,
+            OrderDetailSeeder::class
         ]);
     }
 }

@@ -18,6 +18,11 @@ class Guest extends Model
 
   public function orders(): MorphMany
   {
-      return $this->morphMany(Order::class, 'orderable');
+    return $this->morphMany(Order::class, 'orderable');
+  }
+
+  public function fullname(): string
+  {
+    return $this->first_name . " " . $this->last_name;
   }
 }

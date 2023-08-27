@@ -31,6 +31,17 @@ class UserSeeder extends Seeder
       ]);
     }
 
+    array_push($records, [
+      'first_name' => $faker->firstNameMale(),
+      'last_name' => $faker->lastName(),
+      'email' => 'admin@example.com',
+      'email_verified_at' => $this->gen_datetime(),
+      'password' => Hash::make('12345678'),
+      'created_at' => $this->gen_datetime(),
+      'updated_at' => $this->gen_datetime(),
+      'role' => 'admin'
+    ]);
+
     DB::table('users')->insert($records);
     DB::commit();
   }

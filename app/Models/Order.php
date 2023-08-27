@@ -7,7 +7,13 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Order extends Model
 {
     protected $table = 'orders';
-    protected $fillable =  [ 'name' ];
+
+    protected $fillable =  [
+        'orderable_id',
+        'orderable_type',
+        'total_price',
+        'status'
+    ];
 
     public function orderable()
     {
@@ -17,5 +23,19 @@ class Order extends Model
     public function orderDetails(): HasMany
     {
         return $this->hasMany(OrderDetail::class);
+    }
+
+    public function nextState(): string
+    {
+        return match ($this->status) {
+            'paid' => 'processing',
+            'processing' => 'shipping',
+            'shipping' => 'done'
+        };
+    }
+
+    public function isDone(): bool
+    {
+        return $this->status == 'done';
     }
 }
