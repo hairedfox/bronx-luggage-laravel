@@ -39,7 +39,7 @@ class AuthController extends BaseController
 
         $user = User::where('email', $request->all()['email'])->first();
 
-        if ($user->role == 'admin' && Auth::attempt($credentials)) {
+        if ($user && $user->role == 'admin' && Auth::attempt($credentials)) {
             return redirect()->intended('/admin/dashboard')->with('alert-success', 'Logged in successfully.');;
         }
 

@@ -7,8 +7,10 @@
 
     <main class="py-4">
       <div class="off_canvars_overlay"></div>
-      @include('layouts._off_canvas')
-      @include('layouts._breadcrumbs')
+      @if (!str_contains(Route::currentRouteName(), 'admin'))
+        @include('layouts._off_canvas')
+        @include('layouts._breadcrumbs')
+      @endif
       @yield('content')
     </main>
   </div>

@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.login')
 
 @section('content')
   <div class="customer_login mt-45">
