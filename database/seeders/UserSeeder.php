@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Generator as Faker;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -23,9 +24,10 @@ class UserSeeder extends Seeder
           'last_name' => $faker->lastName(),
           'email' => $faker->email(),
           'email_verified_at' => $this->gen_datetime(),
-          'password' => '$2y$10$EnjxXH02JB.24QPWmSSbEOLW7q6BFUeUrEWjESPV4k87z8wE46BI.', //1234567
+          'password' => Hash::make('12345678'),
           'created_at' => $this->gen_datetime(),
-          'updated_at' => $this->gen_datetime()
+          'updated_at' => $this->gen_datetime(),
+          'role' => $faker->randomElements(['user', 'admin'])[0]
       ]);
     }
 
