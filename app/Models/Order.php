@@ -18,9 +18,4 @@ class Order extends Model
     {
         return $this->hasMany(OrderDetail::class);
     }
-
-    public function totalPrice(): float
-    {
-        return array_reduce($this->orderDetails, fn($sum, $detail) => $sum + $detail->price, 0);
-    }
 }
