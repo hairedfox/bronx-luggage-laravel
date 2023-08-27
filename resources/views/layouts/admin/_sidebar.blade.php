@@ -106,7 +106,7 @@
 
       <ul class="nav flex-column mb-auto">
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="{{ route('admin-logout') }}" onclick="event.preventDefault();
+          <a class="nav-link d-flex align-items-center gap-2" href="#" onclick="event.preventDefault();
                                                                  document.getElementById('admin-logout-form').submit();">
             <svg class="bi">
               <use xlink:href="#door-closed" />
