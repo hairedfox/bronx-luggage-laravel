@@ -1,5 +1,8 @@
 @include('layouts._doctype')
-@include('layouts._head')
+
+<head>
+  @include('layouts._head')
+</head>
 
 <body>
   <div id="app">

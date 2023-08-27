@@ -1,15 +1,13 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ config('app.name', 'Bronx Luggage') }}</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{{ config('app.name', 'Bronx Luggage') }}</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" type="image/x-icon" href="{{Vite::asset('resources/img/favicon.ico')}}">
-  @vite([
-    'resources/css/app.css',
-    'resources/js/app.js',
-    'resources/css/plugins.css',
-    'resources/css/style.css'
-  ])
-</head>
+<link rel="shortcut icon" type="image/x-icon" href="{{Vite::asset('resources/img/favicon.ico')}}">
+@vite([
+  'resources/css/app.css',
+  'resources/js/app.js',
+  'resources/css/plugins.css',
+  'resources/css/style.css'
+])
