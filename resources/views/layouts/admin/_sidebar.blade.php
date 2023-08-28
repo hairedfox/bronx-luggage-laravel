@@ -25,7 +25,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'carriers' ? 'active' : ''}}" href="#">
+          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'carriers' ? 'active' : ''}}" href="{{route('admin-carriers')}}">
             <svg class="bi">
               <use xlink:href="#cart" />
             </svg>
