@@ -33,7 +33,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'customers' ? 'active' : ''}}" href="#">
+          <a class="nav-link d-flex align-items-center gap-2 {{Route::currentRouteName() == 'customers' ? 'active' : ''}}" href="{{route('customers')}}">
             <svg class="bi">
               <use xlink:href="#people" />
             </svg>

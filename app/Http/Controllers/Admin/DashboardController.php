@@ -14,7 +14,7 @@ class DashboardController extends BaseController
     if (Auth::check()) {
       return view('admin.dashboard.index');
     } else {
-      return redirect()->intended('/admin/login')->with('alert-danger', 'Permission denied. Login first');
+      return redirect()->intended('/admin/login')->with('alert-danger', 'Permission denied. Please login.');
     }
   }
 }

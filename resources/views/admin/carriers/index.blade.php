@@ -5,21 +5,7 @@
   <h1 class="h2">Carriers</h1>
 </div>
 
-@include('admin.carriers._carriers')
+@include('admin.carriers._items')
 
-<div class="pagination">
-  <ul>
-    @if ($paginator['last_page'] > 1)
-      @for($i = 0; $i < $paginator['last_page']; $i++)
-        <li class="{{$paginator['page'] == $i + 1 ? 'current' : ''}}">
-          <a href="{{route('admin-carriers', ['page' => $i + 1])}}">{{$i + 1}}</a>
-        </li>
-      @endfor
-
-      @if ($paginator['has_more_page'])
-        <li class="next"><a href="{{$paginator['next']}}">next</a></li>
-      @endif
-    @endif
-  </ul>
-</div>
+@include('admin.shared._paginator', ['route' => 'admin-carriers'])
 @endsection

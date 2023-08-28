@@ -14,7 +14,10 @@
         "postcss": "^8.4.27",
         "vite": "^4.0.0"
     },
-    "dependencies": {},
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.1"
+    },
     "engines": {
         "node": "14.20.0",
         "npm": "6.14.16"

@@ -7,6 +7,7 @@ use App\Http\Controllers\CarriersController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\Admin;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +43,13 @@ Route::get('/admin/orders', [Admin\OrdersController::class, 'index'])->name('ord
 Route::post('/admin/orders/{id}/move-state', [Admin\OrdersController::class, 'moveState']);
 
 Route::get('/admin/carriers', [Admin\CarriersController::class, 'index'])->name('admin-carriers');
+
+Route::get('/admin/customers', [Admin\CustomersController::class, 'index'])->name('customers');
+
+Route::get('/admin', function () {
+  if (!auth()->check()) {
+    return redirect()->intended('/admin/login')->with('alert-danger', 'Permission denied. Please login.');
+  }
+
+  return redirect()->intended('/admin/dashboard');
+});
