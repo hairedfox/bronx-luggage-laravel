@@ -19,7 +19,7 @@
       <td>
         <a href="#">{{$carrier->name}}</a>
       </td>
-      <td>Image</td>
+      <td><img style="width: 150px" src="{{Vite::asset($carrier->carriersImages[0]->media->path)}}"/></td>
       <td>{{$carrier->description}}</td>
       <td>{{$carrier->gender}}</td>
       <td>{{$carrier->brand->name}}</td>
