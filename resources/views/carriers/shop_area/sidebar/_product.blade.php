@@ -1,7 +1,7 @@
 <article class="recent_product_list">
   <figure>
     <div class="product_thumb">
-      <a href="product-details.html"><img src="{{Vite::asset($carrier->carriersImages[0]->media->path)}}" alt=""></a>
+      <a href="product-details.html"><img src="{{Vite::asset($carrier->firstImage())}}" alt=""></a>
     </div>
     <div class="product_content">
       <h4><a href="product-details.html">{{$carrier->name}}</a></h4>

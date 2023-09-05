@@ -16,7 +16,7 @@
 
       <div class="product_thumb">
         <a class="primary_img" href="product-details.html"><img
-            src="{{ Vite::asset($carrier->carriersImages[0]->media->path) }}" alt=""></a>
+            src="{{ Vite::asset($carrier->firstImage()) }}" alt=""></a>
         <div class="label_product">
           <span class="label_sale">Sale!</span>
         </div>

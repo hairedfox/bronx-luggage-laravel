@@ -33,4 +33,9 @@ class Carrier extends Model
     {
         return $this->belongsTo(Brand::class);
     }
+
+    public function firstImage(): string
+    {
+        return $this->carriersImages[0]->media->path;
+    }
 }

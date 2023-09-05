@@ -14,19 +14,19 @@
   </thead>
   <tbody>
     @foreach($carriers as $carrier)
-    <tr>
-      <th scope="row">{{$carrier->id}}</th>
-      <td>
-        <a href="#">{{$carrier->name}}</a>
-      </td>
-      <td><img style="width: 150px" src="{{Vite::asset($carrier->carriersImages[0]->media->path)}}"/></td>
-      <td>{{$carrier->description}}</td>
-      <td>{{$carrier->gender}}</td>
-      <td>{{$carrier->brand->name}}</td>
-      <td>{{$carrier->type}}</td>
-      <td>{{$carrier->price}}</td>
-      <td>{{$carrier->release_year}}</td>
-    </tr>
+      <tr>
+        <th scope="row">{{$carrier->id}}</th>
+        <td>
+          <a href="#">{{$carrier->name}}</a>
+        </td>
+        <td><img style="width: 150px" src="{{Vite::asset($carrier->firstImage())}}"/></td>
+        <td>{{$carrier->description}}</td>
+        <td>{{$carrier->gender}}</td>
+        <td>{{$carrier->brand->name}}</td>
+        <td>{{$carrier->type}}</td>
+        <td>{{$carrier->price}}</td>
+        <td>{{$carrier->release_year}}</td>
+      </tr>
     @endforeach
   </tbody>
 </table>
