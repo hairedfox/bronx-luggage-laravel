@@ -31,7 +31,8 @@
       </div>
     </div>
     <div class="single_slider d-flex align-items-center"
-      data-bgimg="{{ Vite::asset('resources/img/slider/slider5.jpg') }}">
+      data-bgimg="{{ Vite::asset('resources/img/slider/slider5.jpg') }}"
+      >
       <div class="container">
         <div class="row">
           <div class="col-12">

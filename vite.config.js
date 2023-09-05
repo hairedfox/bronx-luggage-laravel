@@ -12,6 +12,10 @@ export default defineConfig({
         }
     },
     plugins: [
+        inject({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
         laravel({
             input: [
                 'resources/css/app.scss',
@@ -22,10 +26,6 @@ export default defineConfig({
                 'resources/js/dashboard.js'
             ],
             refresh: true,
-        }),
-        inject({
-            $: 'jquery',
-            jQuery: 'jquery'
         })
     ],
 });

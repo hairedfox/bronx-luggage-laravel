@@ -22,6 +22,36 @@
       @include('layouts._footer')
     </main>
   </div>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+      jQuery('.owl-carousel').owlCarousel({
+        animateOut: 'fadeOut',
+        autoplay: true,
+        loop: true,
+        nav: true,
+        autoplay: false,
+        autoplayTimeout: 8000,
+        items: 1,
+        dots: true,
+        navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+        navElement: 'div'
+      })
+
+      $(window).on('load', function () {
+        dataBackgroundImage();
+      });
+    })
+
+    function dataBackgroundImage() {
+      $('[data-bgimg]').each(function () {
+        var bgImgUrl = $(this).data('bgimg');
+        $(this).css({
+          'background-image': 'url(' + bgImgUrl + ')', // + meaning concat
+        });
+      });
+    }
+  </script>
 </body>
 
 </html>
