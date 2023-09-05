@@ -24,18 +24,101 @@
   </div>
 
   <script type="text/javascript">
+    const commonConfig = {
+      autoplay: true,
+      loop: true,
+      nav: true,
+      autoplay: false,
+      autoplayTimeout: 8000,
+      navElement: 'div',
+      navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+    }
+
     jQuery(document).ready(function() {
-      jQuery('.owl-carousel').owlCarousel({
+      jQuery('.slider_area.owl-carousel').owlCarousel({
         animateOut: 'fadeOut',
-        autoplay: true,
-        loop: true,
-        nav: true,
-        autoplay: false,
-        autoplayTimeout: 8000,
+        ...commonConfig,
         items: 1,
         dots: true,
-        navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
-        navElement: 'div'
+      })
+
+      jQuery('.product_column4.owl-carousel').owlCarousel({
+        ...commonConfig,
+        items: 4,
+        dots: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 3,
+          },
+          992: {
+            items: 3,
+          },
+          1200: {
+            items: 4,
+          },
+
+        }
+      })
+
+      jQuery('.product_column3.owl-carousel').owlCarousel({
+        ...commonConfig,
+        items: 3,
+        dots: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          992: {
+            items: 2,
+          },
+          1200: {
+            items: 3,
+          },
+        }
+      })
+
+      jQuery('.product_column2.owl-carousel').owlCarousel({
+        ...commonConfig,
+        items: 2,
+        dots: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 1,
+          },
+          992: {
+            items: 2,
+          },
+        }
+      })
+
+      jQuery('.product_column1.owl-carousel').owlCarousel({
+        ...commonConfig,
+        items: 1,
+        dots: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          992: {
+            items: 1,
+          },
+        }
       })
 
       $(window).on('load', function () {
