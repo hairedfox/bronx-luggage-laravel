@@ -6,9 +6,8 @@
 
 <link rel="shortcut icon" type="image/x-icon" href="{{Vite::asset('resources/img/favicon.ico')}}">
 @vite([
-  'resources/css/app.css',
+  'resources/css/app.scss',
   'resources/js/app.js',
   'resources/css/plugins.css',
-  'resources/css/style.css',
-  'resources/js/plugins.js'
+  'resources/css/style.css'
 ])

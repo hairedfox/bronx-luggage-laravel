@@ -12,22 +12,22 @@
                 <div class="tab-content product-details-large">
                   <div class="tab-pane fade show active" id="tab1" role="tabpanel">
                     <div class="modal_tab_img">
-                      <a href="#"><img src="assets/img/product/productbig5.jpg" alt=""></a>
+                      <a href="#"><img src="{{Vite::asset('resources/img/product/productbig5.jpg')}}" alt=""></a>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="tab2" role="tabpanel">
                     <div class="modal_tab_img">
-                      <a href="#"><img src="assets/img/product/productbig4.jpg" alt=""></a>
+                      <a href="#"><img src="{{Vite::asset('resources/img/product/productbig4.jpg')}}" alt=""></a>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="tab3" role="tabpanel">
                     <div class="modal_tab_img">
-                      <a href="#"><img src="assets/img/product/productbig3.jpg" alt=""></a>
+                      <a href="#"><img src="{{Vite::asset('resources/img/product/productbig3.jpg')}}" alt=""></a>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="tab4" role="tabpanel">
                     <div class="modal_tab_img">
-                      <a href="#"><img src="assets/img/product/productbig2.jpg" alt=""></a>
+                      <a href="#"><img src="{{Vite::asset('resources/img/product/productbig2.jpg')}}" alt=""></a>
                     </div>
                   </div>
                 </div>
@@ -35,19 +35,19 @@
                   <ul class="nav product_navactive owl-carousel" role="tablist">
                     <li>
                       <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
-                        aria-selected="false"><img src="assets/img/product/product8.jpg" alt=""></a>
+                        aria-selected="false"><img src="{{Vite::asset('resources/img/product/product8.jpg')}}" alt=""></a>
                     </li>
                     <li>
                       <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
-                        aria-selected="false"><img src="assets/img/product/product6.jpg" alt=""></a>
+                        aria-selected="false"><img src="{{Vite::asset('resources/img/product/product6.jpg')}}" alt=""></a>
                     </li>
                     <li>
                       <a class="nav-link button_three" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"
-                        aria-selected="false"><img src="assets/img/product/product7.jpg" alt=""></a>
+                        aria-selected="false"><img src="{{Vite::asset('resources/img/product/product7.jpg')}}" alt=""></a>
                     </li>
                     <li>
                       <a class="nav-link" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4"
-                        aria-selected="false"><img src="assets/img/product/product5.jpg" alt=""></a>
+                        aria-selected="false"><img src="{{Vite::asset('resources/img/product/product5.jpg')}}" alt=""></a>
                     </li>
 
                   </ul>
