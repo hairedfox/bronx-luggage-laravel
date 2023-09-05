@@ -8,19 +8,22 @@
 
           </div>
           <div class="product_tab_btn">
-            <ul class="nav nav-tabs" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a class="active" data-bs-toggle="tab" href="#Luggage" role="tab" aria-controls="Luggage" aria-selected="true" data-bs-target="#Luggage">
+            <ul class="nav" role="tablist">
+              <li>
+                <a class="active" data-bs-toggle="tab" href="#featured-luggage" role="tab"
+                  aria-controls="featured-luggage" aria-selected="true">
                   Luggage
                 </a>
               </li>
-              <li class="nav-item" role="presentation">
-                <a data-bs-toggle="tab" href="#Backpacks" role="tab" aria-controls="Backpacks" aria-selected="false" data-bs-target="#Backpacks">
+              <li>
+                <a data-bs-toggle="tab" href="#featured-backpacks" role="tab" aria-controls="featured-backpacks"
+                  aria-selected="false">
                   Backpacks
                 </a>
               </li>
-              <li class="nav-item" role="presentation">
-                <a data-bs-toggle="tab" href="#Bags" role="tab" aria-controls="Bags" aria-selected="false" data-bs-target="#Bags">
+              <li>
+                <a data-bs-toggle="tab" href="#featured-bags" role="tab" aria-controls="featured-bags"
+                  aria-selected="false">
                   Bags
                 </a>
               </li>
@@ -30,7 +33,7 @@
       </div>
     </div>
     <div class="tab-content">
-      <div class="tab-pane fade show active" id="Luggage" role="tabpanel">
+      <div class="tab-pane fade show active" id="featured-luggage" role="tabpanel">
         <div class="row">
           <div class="product_carousel product_style product_column4 owl-carousel">
             @foreach($featuredProducts as $product)
@@ -39,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="Backpacks" role="tabpanel">
+      <div class="tab-pane fade" id="featured-backpacks" role="tabpanel">
         <div class="row">
           <div class="product_carousel product_style product_column4 owl-carousel">
             @foreach($featuredProducts as $product)
@@ -48,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="Bags" role="tabpanel">
+      <div class="tab-pane fade" id="featured-bags" role="tabpanel">
         <div class="row">
           <div class="product_carousel product_style product_column4 owl-carousel">
             @foreach($featuredProducts as $product)
