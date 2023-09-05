@@ -30,7 +30,8 @@ class CarrierSeeder extends Seeder
                 'price' => $faker->numberBetween(100, 2000),
                 'release_year' => $faker->numberBetween(1995, 2023),
                 'created_at' => $this->gen_datetime(),
-                'updated_at' => $this->gen_datetime()
+                'updated_at' => $this->gen_datetime(),
+                'featured' => $faker->randomElements([true, false])[0]
             ]);
         }
 

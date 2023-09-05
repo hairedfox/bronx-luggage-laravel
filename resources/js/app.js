@@ -6,3 +6,6 @@ import.meta.glob([
   '../fonts/**',
 ]);
 import * as bootstrap from 'bootstrap';
+import $ from 'jquery';
+
+window.$ = $;

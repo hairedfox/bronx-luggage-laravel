@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreignId('brand_id')->constrained();
             $table->float('price', 16, 2);
             $table->integer('release_year');
+            $table->boolean('featured');
             $table->timestamps();
         });
     }

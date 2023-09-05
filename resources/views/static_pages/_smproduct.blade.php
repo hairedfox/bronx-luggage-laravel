@@ -4,7 +4,7 @@
                 <div class="col-lg-4">
                    <div class="small_product_list">
                         <div class="section_title">
-                           <h2>Computer & Laptop</h2>
+                           <h2>Luggage</h2>
                         </div>
                         <div class="row">
                             <div class="product_carousel small_p_container  product_column1 owl-carousel">
@@ -175,7 +175,7 @@
                 <div class="col-lg-4">
                     <div class="small_product_list">
                         <div class="section_title">
-                           <h2>Electronic & Digital</h2>
+                           <h2>Backpacks</h2>
                         </div>
                         <div class="row">
                             <div class="product_carousel small_p_container  product_column1 owl-carousel">
@@ -344,7 +344,7 @@
                 <div class="col-lg-4">
                    <div class="small_product_list">
                         <div class="section_title">
-                           <h2>Smartphones</h2>
+                           <h2>Bags</h2>
                         </div>
                         <div class="row">
                             <div class="product_carousel small_p_container  product_column1 owl-carousel">

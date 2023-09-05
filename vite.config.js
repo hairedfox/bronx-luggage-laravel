@@ -1,15 +1,11 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import * as path from 'path';
+import inject from "@rollup/plugin-inject";
 
 export default defineConfig({
     server: { https: true },
     root: __dirname,
-    resolve: {
-        alias: {
-            '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
-        }
-    },
     plugins: [
         laravel({
             input: [
@@ -22,6 +18,10 @@ export default defineConfig({
                 'resources/js/dashboard.js'
             ],
             refresh: true,
+        }),
+        inject({
+            $: 'jquery',
+            jQuery: 'jquery'
         })
     ],
 });

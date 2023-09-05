@@ -23,17 +23,7 @@ class OrdersController extends BaseController
 
       return view('admin.orders.index', [
         'orders' => $paginator->items(),
-        'paginator' => [
-          'page' => $paginator->currentPage(),
-          'prev' => $paginator->previousPageUrl(),
-          'next' => $paginator->nextPageUrl(),
-          'count' => $paginator->total(),
-          'per_page' => $paginator->perPage(),
-          'last_page' => $paginator->lastPage(),
-          'has_more_page' => $paginator->hasMorePages(),
-          'first_item' => $paginator->firstItem(),
-          'last_item' => $paginator->lastItem()
-        ]
+        'paginator' => $paginator
       ]);
     } else {
       return redirect()->intended('/admin/login')->with('alert-danger', 'Permission denied. Login first');

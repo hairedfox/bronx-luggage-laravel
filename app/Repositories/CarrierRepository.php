@@ -26,4 +26,11 @@ class CarrierRepository extends AbstractRepository {
 
     return $result->paginate($this->getPageSize($params));
   }
+
+  public function featuredProducts()
+  {
+    $result = $this->query()->with('carriersImages')->where('featured', true)->get();
+
+    return $result;
+  }
 }

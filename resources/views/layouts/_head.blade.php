@@ -9,5 +9,6 @@
   'resources/css/app.css',
   'resources/js/app.js',
   'resources/css/plugins.css',
-  'resources/css/style.css'
+  'resources/css/style.css',
+  'resources/js/plugins.js'
 ])
