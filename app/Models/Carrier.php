@@ -13,12 +13,14 @@ class Carrier extends Model
         'bag'
     ];
     const FILLABLE_ATTRIBUTES = [
+        'name',
         'description',
         'gender',
         'type',
         'brand_id',
         'price',
-        'release_year'
+        'release_year',
+        'featured'
     ];
 
     protected $table = 'carriers';
@@ -36,6 +38,11 @@ class Carrier extends Model
 
     public function firstImage(): string
     {
+        if (empty($this->carriersImages()->get()->toArray()))
+        {
+            return '';
+        }
+
         return $this->carriersImages[0]->media->path;
     }
 }

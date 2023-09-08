@@ -43,6 +43,8 @@ Route::get('/admin/orders', [Admin\OrdersController::class, 'index'])->name('ord
 Route::post('/admin/orders/{id}/move-state', [Admin\OrdersController::class, 'moveState']);
 
 Route::get('/admin/carriers', [Admin\CarriersController::class, 'index'])->name('admin-carriers');
+Route::get('/admin/carriers/new', [Admin\CarriersController::class, 'new'])->name('admin-carriers-new');
+Route::post('/admin/carriers', [Admin\CarriersController::class, 'create']);
 
 Route::get('/admin/customers', [Admin\CustomersController::class, 'index'])->name('customers');
 

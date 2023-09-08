@@ -19,7 +19,11 @@
         <td>
           <a href="#">{{$carrier->name}}</a>
         </td>
-        <td><img style="width: 150px" src="{{Vite::asset($carrier->firstImage())}}"/></td>
+        <td>
+          @if ($carrier->firstImage() != '')
+            <img style="width: 150px" src="{{Vite::asset($carrier->firstImage())}}"/>
+          @endif
+        </td>
         <td>{{$carrier->description}}</td>
         <td>{{$carrier->gender}}</td>
         <td>{{$carrier->brand->name}}</td>

@@ -33,4 +33,13 @@ class CarrierRepository extends AbstractRepository {
 
     return $result;
   }
+
+  public function create(array $params): void
+  {
+    $refinedParams = array_merge($params, [
+      'featured' => !!(isset($params['featured']) && $params['featured'])
+    ]);
+
+    $this->query()->create($refinedParams);
+  }
 }
