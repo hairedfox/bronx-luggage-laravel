@@ -5,7 +5,7 @@
     </span>
     <span class="cart_title">
       <span class="cart_quantity">{{ $cart->itemsCount() }} item(s) </span>
-      <span class="cart_price">$ {{ $cart->totalPrice() }}</span>
+      <span class="cart_price">${{ $cart->totalPrice() }}</span>
     </span>
   </a>
 
