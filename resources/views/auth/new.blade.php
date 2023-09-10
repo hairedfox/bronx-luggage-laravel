@@ -1,5 +1,5 @@
 @extends('layouts.login')
-
+@section('title', 'Log In')
 @section('content')
 <div class="customer_login mt-45">
   <div class="container">

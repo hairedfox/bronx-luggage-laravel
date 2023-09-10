@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Home')
 @section('content')
     @include('static_pages._slider')
     @include('static_pages._shipping')

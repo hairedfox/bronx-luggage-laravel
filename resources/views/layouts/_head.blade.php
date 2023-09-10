@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>{{ config('app.name', 'Bronx Luggage') }}</title>
+<title>{{ config('app.name', 'Bronx Luggage') }} | @yield("title")</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

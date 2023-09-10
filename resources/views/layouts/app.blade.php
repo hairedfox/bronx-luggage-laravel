@@ -11,7 +11,7 @@
     <main class="py-4">
       <div class="off_canvars_overlay"></div>
       @include('layouts._off_canvas')
-      @include('layouts._header')
+      @include('layouts._header', ['cart' => new App\Models\Cart(session())] )
       @include('layouts._breadcrumbs')
 
       <div class="container mb-5">
@@ -135,6 +135,8 @@
       });
     }
   </script>
+
+  @yield('scripts')
 </body>
 
 </html>
