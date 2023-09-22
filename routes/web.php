@@ -8,6 +8,7 @@ use App\Http\Controllers\CartsController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\Admin;
 
 /*
@@ -23,6 +24,7 @@ use App\Http\Controllers\Admin;
 
 Route::get('/', [StaticPagesController::class, 'homepage'])->name('root');
 Route::get('/contact-us', [StaticPagesController::class, 'contact_us'])->name('contact');
+Route::post('/contact-us', [ContactsController::class, 'create']);
 
 Route::get('/login', [AuthController::class, 'showFormLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);

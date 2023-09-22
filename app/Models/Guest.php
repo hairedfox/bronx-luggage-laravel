@@ -21,6 +21,11 @@ class Guest extends Model
     return $this->morphMany(Order::class, 'orderable');
   }
 
+  public function suggestions(): MorphMany
+  {
+      return $this->morphMany(Suggestion::class, 'suggestable');
+  }
+
   public function fullname(): string
   {
     return $this->first_name . " " . $this->last_name;

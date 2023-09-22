@@ -27,18 +27,30 @@
         <div class="col-lg-6 col-md-12">
           <div class="contact_message form">
             <h3>Tell us your project</h3>
-            <form id="contact-form" method="POST"  action="https://htmldemo.net/rusu/rusu/assets/mail.php">
-                <p>
-                    <label> Your Name (required)</label>
-                    <input name="name" placeholder="Name *" type="text">
-                </p>
+            <form id="contact-form" method="POST"  action="/contact-us">
+                @csrf
+                <div class="row">
+                  <p class="col-md-6">
+                    <label> First Name (required)</label>
+                    <input name="first_name" placeholder="First Name *" type="text" required>
+                  </p>
+
+                  <p class="col-md-6">
+                    <label> Last Name (required)</label>
+                    <input name="last_name" placeholder="Last Name *" type="text" required>
+                  </p>
+                </div>
                 <p>
                     <label>  Your Email (required)</label>
-                    <input name="email" placeholder="Email *" type="email">
+                    <input name="email" placeholder="Email *" type="email" required>
+                </p>
+                <p>
+                  <label> Your Phone (required)</label>
+                  <input name="phone" placeholder="Phone *" type="number" required>
                 </p>
                 <p>
                     <label>  Subject</label>
-                    <input name="subject" placeholder="Subject *" type="text">
+                    <input name="subject" placeholder="Subject *" type="text" required>
                 </p>
                 <div class="contact_textarea">
                     <label>  Your Message</label>

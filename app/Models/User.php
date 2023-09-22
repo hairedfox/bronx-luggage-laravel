@@ -60,4 +60,9 @@ class User extends Authenticatable
     {
         return $this->morphMany(Order::class, 'orderable');
     }
+
+    public function suggestions(): MorphMany
+    {
+        return $this->morphMany(Suggestion::class, 'suggestable');
+    }
 }
