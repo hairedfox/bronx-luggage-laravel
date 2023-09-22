@@ -10,6 +10,7 @@ use App\Http\Controllers\UsersController;
 use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\Admin;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -68,3 +69,12 @@ Route::get('/admin', function () {
 
   return redirect()->intended('/admin/dashboard');
 });
+
+Route::get('/sitemap', function (Request $request) {
+  return response(
+    file_get_contents(base_path().'/public/sitemap.xml'), 200,
+    [
+      'Content-Type' => 'application/xml'
+    ]
+  );
+})->name('sitemap');

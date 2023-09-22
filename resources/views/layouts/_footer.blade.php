@@ -77,7 +77,7 @@
             <h3>Customer Service</h3>
             <div class="footer_menu">
               <ul>
-                <li><a href="sitemap.xml">Sitemap</a></li>
+                <li><a href="{{route('sitemap')}}">Sitemap</a></li>
                 <li><a href="#">Delivery Information</a></li>
               </ul>
             </div>
