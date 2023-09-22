@@ -11248,3 +11248,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .sidebar .nav-link:hover {
   background: #d9e4e7;
 }
+
+.owl-item {
+  color: white;
+}

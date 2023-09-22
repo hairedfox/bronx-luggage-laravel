@@ -24,6 +24,10 @@ class Cart {
     return $result;
   }
 
+  public function totalPriceDisplay() {
+
+  }
+
   public function itemsCount() {
     return count($this->cartItems);
   }
