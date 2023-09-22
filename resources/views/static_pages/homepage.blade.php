@@ -4,7 +4,7 @@
     @include('static_pages._slider')
     @include('static_pages._shipping')
     @include('static_pages._product')
-    @include('static_pages._categories_product_area')
+    @include('static_pages._hot_brands_product_area')
     @include('static_pages._smproduct')
     @include('static_pages._modal')
 @endsection
