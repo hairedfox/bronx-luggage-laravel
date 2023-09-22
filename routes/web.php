@@ -59,6 +59,8 @@ Route::post('/admin/carriers', [Admin\CarriersController::class, 'create']);
 
 Route::get('/admin/customers', [Admin\CustomersController::class, 'index'])->name('customers');
 
+Route::get('/admin/suggestions', [Admin\SuggestionsController::class, 'index'])->name('suggestions');
+
 Route::get('/admin', function () {
   if (!auth()->check()) {
     return redirect()->intended('/admin/login')->with('alert-danger', 'Permission denied. Please login.');
