@@ -6,10 +6,10 @@
         <div class="row">
           <div class="col-12">
             <div class="slider_content">
-              <h1> Pendant <br> Collection 2022</h1>
+              <h1> Louis Vuitton <br> Collection 2023</h1>
               <p>consectetur adipisicing elit. Itaque dolorem, aliquam quos. Molestias dolorum explicabo totam illum
                 itaque sit </p>
-              <a class="button" href="shop.html">SHOPPING NOW</a>
+              <a class="button" style="color: white" href="{{route('shop')}}">SHOPPING NOW</a>
             </div>
           </div>
         </div>
@@ -21,10 +21,10 @@
         <div class="row">
           <div class="col-12">
             <div class="slider_content">
-              <h1>The New iPad <br> Entry Level 9.7-inch </h1>
+              <h1>The New Winter Luggage Collection 2023 <br>  </h1>
               <p>consectetur adipisicing elit. Itaque dolorem, aliquam quos. Molestias dolorum explicabo totam illum
                 itaque sit </p>
-              <a class="button" href="shop.html">SHOPPING NOW</a>
+              <a class="button" style="color: white" href="{{route('shop')}}">SHOPPING NOW</a>
             </div>
           </div>
         </div>
@@ -37,10 +37,10 @@
         <div class="row">
           <div class="col-12">
             <div class="slider_content">
-              <h1>Fast Charge <br> Collection 2022 </h1>
+              <h1>Big Bag <br> Collection 2023 </h1>
               <p>consectetur adipisicing elit. Itaque dolorem, aliquam quos. Molestias dolorum explicabo totam illum
                 itaque sit </p>
-              <a class="button" href="shop.html">SHOPPING NOW</a>
+              <a class="button" style="color: white" href="{{route('shop')}}">SHOPPING NOW</a>
             </div>
           </div>
         </div>
