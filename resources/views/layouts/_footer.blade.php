@@ -100,27 +100,4 @@
       </div>
     </div>
   </div>
-  <div class="footer_bottom">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-md-6">
-          <div class="copyright_area">
-            <p>&copy; 2022 <span class="text-uppercase">RUSU</span>. Made with <i class="fa fa-heart"></i> by <a
-                target="_blank" href="https://www.hasthemes.com/">HasThemes</a></p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="footer_social text-right">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </footer>
