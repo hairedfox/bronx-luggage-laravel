@@ -24,6 +24,16 @@ class CarrierRepository extends AbstractRepository {
                          ->where('carriers_categories.category_id', $params['category_id_eq']);
     }
 
+    if (isset($params['sort_by']))
+    {
+      if(isset($params['sort_direction'])) {
+        $direction = $params['sort_direction'];
+      } else {
+        $direction = 'asc';
+      }
+      $result = $result->orderBy($params['sort_by'], $direction);
+    }
+
     return $result->paginate($this->getPageSize($params));
   }
 

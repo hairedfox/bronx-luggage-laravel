@@ -21,8 +21,7 @@
       </div>
       <div class="product_footer product_content grid_content">
         <div class="price_box">
-          <span class="old_price">$86.00</span>
-          <span class="current_price">{{$carrier->price}}</span>
+          <span class="current_price">{{$carrier->priceInUsd()}}</span>
         </div>
         <div class="action_links">
           <ul>
@@ -49,15 +48,14 @@
           </ul>
         </div>
         <div class="price_box">
-          <span class="old_price">$86.00</span>
-          <span class="current_price">{{$carrier->price}}</span>
+          <span class="current_price">{{$carrier->priceInUsd()}}</span>
         </div>
         <div class="product_desc">
           <p>{{$carrier->description}}</p>
         </div>
         <div class="action_links">
           <ul>
-            <li class="add_to_cart"><a href="cart.html" title="Add to cart">Add to cart</a></li>
+            <li class="add_to_cart"><a href="{{url('add-to-cart/'.$carrier->id)}}" title="Add to cart">Add to cart</a></li>
 
             <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
                   class="ion-android-favorite-outline"></i></a></li>
