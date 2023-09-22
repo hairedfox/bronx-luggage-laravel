@@ -36,7 +36,7 @@
               <li class="wishlist"><a href="wishlist.html"><i class="icon ion-clipboard"></i> Wishlist </a></li>
               <li class="top_links"><a href="#"><i class="ion-gear-a"></i> Setting <i class="ion-chevron-down"></i></a>
                 <ul class="dropdown_links">
-                  <li><a href="checkout.html">Checkout </a></li>
+                  <li><a href="{{route('checkout')}}">Checkout </a></li>
                   <li><a href="my-account.html">My Account </a></li>
                   <li><a href="cart.html">Shopping Cart</a></li>
                   <li><a href="wishlist.html">Wishlist</a></li>
@@ -123,10 +123,10 @@
               </div>
               <div class="mini_cart_footer">
                 <div class="cart_button">
-                  <a href="cart.html">View cart</a>
+                  <a href="{{route('shopping-cart')}}">View cart</a>
                 </div>
                 <div class="cart_button">
-                  <a href="checkout.html">Checkout</a>
+                  <a href="{{route('checkout')}}">Checkout</a>
                 </div>
 
               </div>
@@ -163,9 +163,9 @@
                   <li class="menu-item-has-children">
                     <a href="#">other Pages</a>
                     <ul class="sub-menu">
-                      <li><a href="cart.html">cart</a></li>
+                      <li><a href="{{route('shopping-cart')}}">cart</a></li>
                       <li><a href="wishlist.html">Wishlist</a></li>
-                      <li><a href="checkout.html">Checkout</a></li>
+                      <li><a href="{{route('checkout')}}">Checkout</a></li>
                       <li><a href="my-account.html">my account</a></li>
                       <li><a href="404.html">Error 404</a></li>
                     </ul>

@@ -15,8 +15,7 @@
         </ul>
       </div>
       <div class="price_box">
-        <span class="old_price">$70.00</span>
-        <span class="current_price">{{$carrier->price}}</span>
+        <span class="current_price">{{$carrier->priceInUsd()}}</span>
       </div>
     </div>
   </figure>

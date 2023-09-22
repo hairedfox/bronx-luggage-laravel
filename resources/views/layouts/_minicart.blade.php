@@ -12,8 +12,8 @@
   <!--mini cart-->
   <div class="mini_cart">
     <div class="mini_cart_inner">
-      @foreach($cart->cartItems as $item)
-        @include('layouts.minicart._cart_item', ['item' => $item])
+      @foreach($cart->cartItems as $id => $item)
+        @include('layouts.minicart._cart_item', ['item' => $item, 'id' => $id])
       @endforeach
       <div class="mini_cart_table">
         <div class="cart_total">
@@ -31,7 +31,7 @@
         <a href="{{route('shopping-cart')}}">View cart</a>
       </div>
       <div class="cart_button">
-        <a href="checkout.html">Checkout</a>
+        <a href="{{route('checkout')}}">Checkout</a>
       </div>
 
     </div>

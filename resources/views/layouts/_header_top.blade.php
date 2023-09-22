@@ -32,7 +32,6 @@
               <li class="wishlist"><a href="wishlist.html"><i class="icon ion-clipboard"></i> Wishlist </a></li>
               <li class="top_links"><a href="#"><i class="ion-gear-a"></i> Setting <i class="ion-chevron-down"></i></a>
                 <ul class="dropdown_links">
-                  <li><a href="checkout.html">Checkout </a></li>
                   <li><a href="my-account.html">My Account </a></li>
                   <li><a href="{{route('shopping-cart')}}">Shopping Cart</a></li>
                   <li><a href="wishlist.html">Wishlist</a></li>

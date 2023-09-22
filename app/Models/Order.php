@@ -3,6 +3,7 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Order extends Model
 {
@@ -15,7 +16,7 @@ class Order extends Model
         'status'
     ];
 
-    public function orderable()
+    public function orderable(): MorphTo
     {
         return $this->morphTo();
     }

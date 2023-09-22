@@ -11252,3 +11252,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .owl-item {
   color: white;
 }
+
+.order-btn {
+  background: black;
+  border: 1px solid black;
+}
+
+.order-btn:hover {
+  background: #5b4d4d;
+}

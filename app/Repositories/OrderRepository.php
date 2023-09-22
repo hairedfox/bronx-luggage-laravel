@@ -28,4 +28,11 @@ class OrderRepository extends AbstractRepository {
   {
     return $this->query()->paginate($this->getPageSize($params));
   }
+
+  public function create(array $params)
+  {
+    $order = $this->query()->create($params);
+
+    return $order;
+  }
 }

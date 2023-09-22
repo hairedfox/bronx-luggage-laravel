@@ -7,8 +7,8 @@ use App\Http\Controllers\CarriersController;
 use App\Http\Controllers\CartsController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\Admin;
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,8 +30,8 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/shop', [CarriersController::class, 'index'])->name('shop');
 Route::get('add-to-cart/{id}', [CartsController::class, 'addToCart']);
-Route::patch('update-cart', [CartsController::class, 'update']);
-Route::delete('remove-from-cart', [CartsController::class, 'remove']);
+Route::patch('update-cart', [CartsController::class, 'update'])->name('update-cart');
+Route::delete('remove-from-cart', [CartsController::class, 'remove'])->name('remove-from-cart');
 Route::get('shopping-cart', [CartsController::class, 'show'])->name('shopping-cart');
 
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
@@ -39,6 +39,9 @@ Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
 Route::get('/users/new', [UsersController::class, 'new'])->name('register');
 Route::post('/users', [UsersController::class, 'create']);
 
+Route::get('/checkout', [OrdersController::class, 'checkout'])->name('checkout');
+Route::post('/place-order', [OrdersController::class, 'placeOrder'])->name('place-order');
+Route::get('/thank-you', [OrdersController::class, 'thank'])->name('thank-you');
 
 Route::get('/admin/login', [Admin\AuthController::class, 'new'])->name('admin-login');
 Route::post('/admin/login', [Admin\AuthController::class, 'login']);
