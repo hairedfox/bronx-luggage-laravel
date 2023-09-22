@@ -13,6 +13,10 @@ class AuthController extends Controller
      */
     public function showFormLogin()
     {
+        if (auth()->check()) {
+            return redirect()->intended('/')->with('alert-danger', 'Already logged in.');
+        }
+
         return view('auth.new');
     }
 

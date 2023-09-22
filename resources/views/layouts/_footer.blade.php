@@ -21,10 +21,10 @@
               </form>
               <!-- mailchimp-alerts Start -->
               <div class="mailchimp-alerts text-centre">
-                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-              </div><!-- mailchimp-alerts end -->
+                <div class="mailchimp-submitting"></div>
+                <div class="mailchimp-success"></div>
+                <div class="mailchimp-error"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -57,11 +57,6 @@
             <div class="footer_menu">
               <ul>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Delivery Information</a></li>
-                <li><a href="#">New products</a></li>
-                <li><a href="#">Best sales</a></li>
-                <li><a href="my-account.html">My Account</a></li>
-                <li><a href="#">Order History</a></li>
               </ul>
             </div>
           </div>
@@ -71,12 +66,8 @@
             <h3>My Account</h3>
             <div class="footer_menu">
               <ul>
-                <li><a href="my-account.html">My Account</a></li>
-                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="{{route('shopping-cart')}}">Shopping Cart</a></li>
                 <li><a href="wishlist.html">Wish List</a></li>
-                <li><a href="#">Prices drop</a></li>
-                <li><a href="#">Order History</a></li>
-                <li><a href="#">International Orders</a></li>
               </ul>
             </div>
           </div>
@@ -86,12 +77,8 @@
             <h3>Customer Service</h3>
             <div class="footer_menu">
               <ul>
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="my-account.html">My Account</a></li>
+                <li><a href="sitemap.xml">Sitemap</a></li>
                 <li><a href="#">Delivery Information</a></li>
-                <li><a href="#">Order History</a></li>
-                <li><a href="wishlist.html">Wish List</a></li>
-                <li><a href="#">Specials</a></li>
               </ul>
             </div>
           </div>
