@@ -22,11 +22,14 @@ class OrdersController extends BaseController {
   public function checkout(Request $request) {
     $cart = new Cart(session());
 
-    if ($cart->cartItems > 0) {
-      return view('orders.checkout');
+    if (count($cart->cartItems) > 0) {
+      return view('orders.checkout',
+      [
+        'cart' => $cart
+      ]);
     }
 
-    return redirect()->intended('/shop')->withErrors('alert-info', 'Please choose something first!');
+    return redirect()->intended('/shop')->with('alert-info', 'Please choose something first!');
   }
 
   public function placeOrder(Request $request) {
@@ -70,7 +73,7 @@ class OrdersController extends BaseController {
 
       return redirect()->intended('/thank-you');
     } else {
-      return redirect()->intended('/')->withErrors('alert-danger', 'Your cart is empty!');
+      return redirect()->intended('/')->with('alert-danger', 'Your cart is empty!');
     }
   }
 

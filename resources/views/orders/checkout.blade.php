@@ -18,23 +18,23 @@
         @csrf
         <div class="row mt-2">
           <div class="form-group col-md-6">
-            <input class="form-control" type="text" name="first_name" placeholder="First name">
+            <input class="form-control" type="text" name="first_name" placeholder="First name" required>
           </div>
           <div class="form-group col-md-6">
-            <input class="form-control" type="text" name="last_name" placeholder="Last name">
+            <input class="form-control" type="text" name="last_name" placeholder="Last name" required>
           </div>
         </div>
 
         <div class="form-group mt-2">
-          <input type="number" placeholder="Phone" name="phone" class="form-control">
+          <input type="number" placeholder="Phone" name="phone" class="form-control" required>
         </div>
 
         <div class="form-group mt-2">
-          <input type="email" placeholder="Email..." name="email" class="form-control">
+          <input type="email" placeholder="Email..." name="email" class="form-control" required>
         </div>
 
         <div class="form-group mt-2">
-          <input class="form-control" type="text" name="address" placeholder="Address">
+          <input class="form-control" type="text" name="address" placeholder="Address (optional)">
         </div>
 
         <div class="form-group mt-2">
@@ -42,7 +42,7 @@
         </div>
 
         <div class="form-group mt-2">
-          <input type="text" class="form-control" name="city" placeholder="City">
+          <input type="text" class="form-control" name="city" placeholder="City (optional)">
         </div>
 
         <div class="row mt-2">
@@ -76,6 +76,18 @@
           <button class="btn btn-lg btn-primary order-btn">PLACE ORDER</button>
         </div>
       </form>
+    </div>
+
+    <div class="col-md-6" style="max-height: 700px; overflow: scroll">
+      @foreach($cart->cartItems as $id => $item)
+        <div class="d-flex border-bottom">
+          <img src="{{Vite::asset($item['imagePath'])}}" alt="" style="width: 120px">
+          <div class="item--info pt-3">
+            <div><strong>{{ $item['name'] }}</strong></div>
+            <div>Qty: {{$item['quantity']}} x <strong>${{number_format($item['price'], 2)}}</strong></div>
+          </div>
+        </div>
+      @endforeach
     </div>
   </div>
 @endsection
