@@ -18,7 +18,7 @@
       <div class="mini_cart_table">
         <div class="cart_total">
           <span>Sub total:</span>
-          <span class="price">{{ $cart->subTotalPrice() }}</span>
+          <span class="price">{{ $cart->subTotalPriceDisplay() }}</span>
         </div>
         <div class="cart_total mt-10">
           <span>total:</span>

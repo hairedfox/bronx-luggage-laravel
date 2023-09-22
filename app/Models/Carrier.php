@@ -45,4 +45,9 @@ class Carrier extends Model
 
         return $this->carriersImages[0]->media->path;
     }
+
+    public function priceInUsd(): string
+    {
+        return '$' . number_format($this->price, 2);
+    }
 }

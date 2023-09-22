@@ -21,10 +21,9 @@
           <span class="label_sale">Sale!</span>
         </div>
       </div>
-      <div class="product_footer">
+      <div class="product_footer text-center">
         <div class="price_box">
-          <span class="old_price">$80.00</span>
-          <span class="current_price">{{$carrier->price}}</span>
+          <span class="current_price">{{$carrier->priceInUsd()}}</span>
         </div>
         <div class="action_links">
           <ul>

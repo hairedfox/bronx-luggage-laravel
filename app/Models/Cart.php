@@ -18,6 +18,10 @@ class Cart {
     return $result;
   }
 
+  public function subTotalPriceDisplay() {
+    return '$' . number_format($this->subTotalPrice(), 2);
+  }
+
   public function totalPrice() {
     $result = $this->subTotalPrice() + Cart::TAX * $this->subTotalPrice();
 
@@ -25,7 +29,7 @@ class Cart {
   }
 
   public function totalPriceDisplay() {
-
+    return '$'.number_format($this->totalPrice(), 2);
   }
 
   public function itemsCount() {
