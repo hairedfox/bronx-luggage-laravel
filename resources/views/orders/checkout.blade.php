@@ -88,6 +88,8 @@
           </div>
         </div>
       @endforeach
+
+      <h3 class="mt-3">Total <span style="font-size: .5em">(+8% VAT)</span>: <span>{{ $cart->totalPriceDisplay() }}</span></h3>
     </div>
   </div>
 @endsection

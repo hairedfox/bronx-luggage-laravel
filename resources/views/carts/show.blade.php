@@ -12,10 +12,7 @@
     </tr>
   </thead>
   <tbody>
-    <?php $total = 0 ?>
-    @if(session('cart'))
-    @foreach(session('cart') as $id => $details)
-    <?php $total += $details['price'] * $details['quantity'] ?>
+    @foreach($cart->cartItems as $id => $details)
     <tr>
       <td data-th="Product">
         <div class="row">
@@ -26,11 +23,11 @@
           </div>
         </div>
       </td>
-      <td data-th="Price">${{ $details['price'] }}</td>
+      <td data-th="Price">${{ number_format($details['price'], 2) }}</td>
       <td data-th="Quantity">
         <input type="number" value="{{ $details['quantity'] }}" class="form-control quantity" />
       </td>
-      <td data-th="Subtotal" class="text-center">${{ $details['price'] * $details['quantity'] }}</td>
+      <td data-th="Subtotal" class="text-center">${{ number_format($details['price'] * $details['quantity'], 2) }}</td>
       <td class="actions" data-th="">
         <button class="btn btn-info btn-sm update-cart" data-id="{{ $id }}"><i class="fa fa-refresh"></i></button>
         <button class="btn btn-danger btn-sm remove-from-cart" data-id="{{ $id }}"><i
@@ -38,16 +35,12 @@
       </td>
     </tr>
     @endforeach
-    @endif
   </tbody>
   <tfoot>
-    <tr class="visible-xs">
-      <td class="text-center"><strong>Total {{ $total }}</strong></td>
-    </tr>
     <tr>
       <td><a href="{{ url('/') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
       <td colspan="2" class="hidden-xs"></td>
-      <td class="hidden-xs text-center"><strong>Total ${{ $total }}</strong></td>
+      <td class="hidden-xs text-center"><strong>Total {{ $cart->totalPriceDisplay() }}</strong></td>
     </tr>
   </tfoot>
 </table>

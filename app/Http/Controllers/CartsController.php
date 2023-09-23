@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cart;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use App\Models\Carrier;
@@ -10,7 +11,7 @@ class CartsController extends Basecontroller
 {
   public function show(Request $request)
   {
-    $cart = session()->get('cart');
+    $cart = new Cart(session());
 
     if (!$cart) {
       return view('carts.show', ['cart' => []]);
