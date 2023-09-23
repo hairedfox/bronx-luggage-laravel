@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cart;
 use App\Models\Guest;
+use App\Models\User;
 use App\Repositories\OrderDetailRepository;
 use App\Repositories\OrderRepository;
 use Illuminate\Routing\Controller as BaseController;
@@ -41,7 +42,7 @@ class OrdersController extends BaseController {
 
     if (auth()->check()) {
       $orderableId = auth()->user()->id;
-      $orderableType = 'User';
+      $orderableType = User::class;
     } else {
       $guest = Guest::query()->where('email', $input['email'])->firstOrCreate(
         [
@@ -52,7 +53,7 @@ class OrdersController extends BaseController {
         ]
       );
       $orderableId = $guest->id;
-      $orderableType = 'Guest';
+      $orderableType = Guest::class;
     }
 
     if ($cart->itemsCount() > 0) {
