@@ -26,7 +26,7 @@ class OrderRepository extends AbstractRepository {
 
   public function list(array $params): Paginator
   {
-    return $this->query()->paginate($this->getPageSize($params));
+    return $this->query()->orderBy('created_at', 'desc')->paginate($this->getPageSize($params));
   }
 
   public function create(array $params)
