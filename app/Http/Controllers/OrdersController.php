@@ -45,6 +45,7 @@ class OrdersController extends BaseController {
     } else {
       $guest = Guest::query()->where('email', $input['email'])->firstOrCreate(
         [
+          'email' => $input['email'],
           'phone_number' => $input['phone'],
           'first_name' => $input['first_name'],
           'last_name' => $input['last_name']
